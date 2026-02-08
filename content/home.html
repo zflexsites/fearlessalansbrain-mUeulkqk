@@ -1,9 +1,913 @@
-<main data-page-type="home" data-page-title="Fearlessalan&#39;sBrain | Learning to think"><script class="zflex-fragment-data" type="application/json">{"page":{"url":"/"},"storeId":"mUeulkqk6ifOTDauusjn","theme":{"themeId":"crystal","version":"1.3.0","manifestUpdatedAt":{"_seconds":1770137698,"_nanoseconds":381000000},"manifest":{"settingsSchema":[{"type":"group","label":"Ordre des Sections (Layout)","fields":[{"id":"homePageSections","label":"Séquence de la Page","type":"repeater","itemFields":[{"id":"type","label":"Type de section","type":"select","options":[{"value":"hero","label":"1. Hero (Intro Impact)"},{"value":"painPoints","label":"2. Pain Points (Problématique)"},{"value":"featuredProduct","label":"3. Spotlight Product (Un seul)"},{"value":"featuredProducts","label":"4. Featured Products (Grille)"},{"value":"features","label":"5. Store Features (Atouts)"},{"value":"productsByCategory","label":"6. Category Switcher (Collections)"},{"value":"promoBanner","label":"7. Promo Banner (Offre Spéciale)"},{"value":"testimonials","label":"8. Testimonials (Preuve Sociale)"},{"value":"faq","label":"9. FAQ (Questions)"},{"value":"about","label":"10. Our Story (À Propos)"},{"value":"newsletterSignup","label":"11. Newsletter (Engagement)"}]}]}]},{"type":"group","label":"1. Hero (L'Impact)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero","default":"image"},{"id":"hero.title","label":"Titre Principal","type":"text","default":"Votre Titre Principal"},{"id":"hero.subtitle","label":"Sous-titre / Accroche","type":"textarea","default":"Une brève description de votre activité ou de votre proposition de valeur."},{"id":"hero.imageUrl","label":"Image de fond","type":"image","default":""},{"id":"hero.ctaButtonText","label":"Texte du bouton","type":"text","default":"Explorer"},{"id":"hero.ctaButtonUrl","label":"Lien du bouton","type":"select","options":[{"value":"/","label":"Accueil"},{"value":"/catalog","label":"Catalogue"},{"value":"/cart","label":"Panier"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#featuredProduct","label":"Ancre: Produit Vedette"},{"value":"#productsByCategory","label":"Ancre: Catégories"},{"value":"#features","label":"Ancre: Avantages"},{"value":"#testimonials","label":"Ancre: Témoignages"},{"value":"#faq","label":"Ancre: FAQ"},{"value":"#about","label":"Ancre: Notre Histoire"}],"default":"#featuredProducts"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text","default":"Problématique Client"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea","default":"Décrivez ici les défis majeurs rencontrés par vos clients."},{"id":"painPoints.items","label":"Problèmes","type":"repeater","default":[{"icon":"fas fa-ban","text":"Point de douleur 1"},{"icon":"fas fa-search","text":"Point de douleur 2"},{"icon":"fas fa-dollar-sign","text":"Point de douleur 3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Spotlight Product (Seul)","fields":[{"id":"featuredProduct.title","label":"Titre Alternatif","type":"text"},{"id":"featuredProduct.productId","label":"Sélectionner le Produit Star","type":"product_selector"}]},{"type":"group","label":"4. Featured Products (Liste)","fields":[{"id":"featuredProducts.title","label":"Titre du Bloc","type":"text","default":"Collection Vedette"},{"id":"featuredProducts.subtitle","label":"Sous-titre / Introduction","type":"textarea"},{"id":"featuredProducts.productIds","label":"Sélection des Produits","type":"products_selector"}]},{"type":"group","label":"5. Store Features (Atouts)","fields":[{"id":"features.title","label":"Titre","type":"text","default":"Fonctionnalités Clés"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Mettez en avant les points forts de votre produit ou service."},{"id":"features.items","label":"Points forts","type":"repeater","itemFields":[{"id":"title","label":"Nom de l'atout","type":"text"},{"id":"description","label":"Détails","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"default":[{"title":"Avantage 1","description":"Description détaillée de cet avantage concurrentiel.","image":""},{"title":"Avantage 2","description":"Description détaillée de ce second avantage.","image":""}]}]},{"type":"group","label":"6. Category Switcher","fields":[{"id":"productsByCategory.style","label":"Mode d'affichage","type":"variant_selector","variantId":"productsByCategory"},{"id":"productsByCategory.title","label":"Titre de section","type":"text"}]},{"type":"group","label":"7. Promotion & Offre","fields":[{"id":"promo.style","label":"Style d'affichage","type":"variant_selector","variantId":"promo","default":"standard"},{"id":"promo.title","label":"Titre","type":"text","default":"Offre Spéciale"},{"id":"promo.subtitle","label":"Sous-titre","type":"text","default":"Détails de votre offre promotionnelle à durée limitée."},{"id":"promo.endDate","label":"Date de fin (YYYY-MM-DD HH:MM)","type":"text","default":"2026-12-31 23:59"},{"id":"promo.buttonText","label":"Texte Bouton","type":"text","default":"Profiter"},{"id":"promo.buttonUrl","label":"Lien Promotion","type":"select","options":[{"value":"/catalog","label":"Catalogue"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#","label":"Haut de page"}],"default":"#featuredProducts"}]},{"type":"group","label":"8. Témoignages Clients","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials","default":"carousel"},{"id":"testimonials.title","label":"Titre de la Section","type":"text","default":"Témoignages Clients"},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"name","label":"Nom de l'auteur","type":"text"},{"id":"quote","label":"Message","type":"textarea"}],"default":[{"name":"Client","quote":"Message de satisfaction client."}]}]},{"type":"group","label":"9. FAQ (Questions)","fields":[{"id":"faq.title","label":"Titre FAQ","type":"text","default":"Questions Fréquentes"},{"id":"faq.items","label":"Questions / Réponses","type":"repeater","itemFields":[{"id":"question","label":"La Question","type":"text"},{"id":"answer","label":"La Réponse","type":"textarea"}],"default":[{"question":"Question ?","answer":"Réponse."}]}]},{"type":"group","label":"10. Notre Histoire (À Propos)","fields":[{"id":"about.title","label":"Titre","type":"text","default":"Notre Histoire"},{"id":"about.content","label":"Texte principal","type":"textarea"},{"id":"about.engagements","label":"Engagements & Valeurs","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"icon","label":"Icône","type":"text"}]}]},{"type":"group","label":"11. Newsletter (Capture)","fields":[{"id":"newsletterSignup.style","label":"Style d'affichage","type":"variant_selector","variantId":"newsletterSignup","default":"modern"},{"id":"newsletterSignup.title","label":"Titre d'Incitation","type":"text","default":"Rejoignez-nous"},{"id":"newsletterSignup.subtitle","label":"Argument de vente","type":"text"}]},{"type":"group","label":"Branding & Couleurs","fields":[{"id":"palette.background","label":"Couleur de Fond","type":"color"},{"id":"palette.text","label":"Couleur du Texte","type":"color"},{"id":"palette.textMuted","label":"Texte Secondaire","type":"color"},{"id":"palette.primary","label":"Couleur Primaire","type":"color"},{"id":"palette.secondary","label":"Couleur Secondaire","type":"color"},{"id":"palette.accent","label":"Couleur d'Accent","type":"color"},{"id":"palette.cardBackground","label":"Fond des Cartes","type":"color"},{"id":"palette.cardBorder","label":"Bordures des Cartes","type":"color"}]},{"type":"group","label":"Styles UI Globaux","fields":[{"id":"header.style","label":"Variante Header","type":"variant_selector","variantId":"header"},{"id":"productCard.style","label":"Variante Cartes Produit","type":"variant_selector","variantId":"productCard"}]}],"author":"zFlex Vandal Architect","magicSuggestions":[{"label":"✨ Mode Catalogue","prompt":"Organise ma boutique pour mettre mes catégories en avant avec un défilement fluide, parfait pour parcourir toute ma collection en un clin d'œil."},{"label":"💎 Épure Luxe","prompt":"Crée une ambiance de bijouterie haut de gamme : beaucoup d'espace, un fond d'un blanc pur et un design de carte produit minimaliste qui sublime mes créations."},{"label":"📈 Mur de Confiance","prompt":"Affiche fièrement la satisfaction de mes clients avec une grille d'avis massive juste sous mes produits phares pour transformer chaque visiteur en acheteur."},{"label":"⚡ Look Immersion","prompt":"Donne un aspect moderne et épuré en faisant fondre mon menu dans une grande image d'accueil plein écran pour une première impression mémorable."},{"label":"🛍️ Parcours Zen","prompt":"Rends l'expérience d'achat ultra-directe en allant droit à l'essentiel : une belle intro, mon produit star et une offre promotionnelle percutante."}],"name":"Crystal","description":"Une philosophie de clarté et de modularité. Idéal pour les catalogues produits riches et les marques qui privilégient une expérience utilisateur directe et élégante. Supporte désormais le storytelling narratif complet.","variants":{"productCard":[{"id":"classic","label":"Classique","description":"Carte traditionnelle avec bordures et fond distinct."},{"id":"minimal","label":"Minimaliste","description":"Design épuré, sans bordures, centré sur l'image."}],"promo":[{"id":"standard","label":"Standard (Clean)","description":"Bannière promo classique et élégante."},{"id":"timer","label":"Urgence (Timer)","description":"Ajoute un compte à rebours pour maximiser la pression."}],"newsletterSignup":[{"id":"modern","label":"Moderne (Capsule)","description":"Formulaire arrondi type 'pilule' avec ombre portée."},{"id":"minimal","label":"Minimaliste (Centré)","description":"Champs classiques soulignés ou simples, centrés."}],"testimonials":[{"id":"carousel","label":"Carrousel","description":"Défilement horizontal fluide."},{"id":"grid","label":"Grille (Wall)","description":"Mosaïque d'avis pour preuve sociale massive."}],"header":[{"id":"default","label":"Défaut (Gauche)","description":"Logo à gauche, liens et panier à droite."},{"id":"transparent","label":"Transparent","description":"Header superposé sur la bannière Hero."}],"hero":[{"id":"image","label":"Image de fond","description":"Un grand visuel avec un titre en superposition."},{"id":"gradient","label":"Dégradé de couleurs","description":"Un fond dynamique basé sur la palette du thème."},{"id":"minimal","label":"Minimaliste","description":"Un simple titre sur un fond uni."}],"productsByCategory":[{"id":"list","label":"Liste Verticale","description":"Toutes les catégories se suivent."},{"id":"carousel","label":"Le Switcher (Carrousel)","description":"Navigation horizontale entre catégories avec grid dynamique."}]},"version":"1.3.0"},"variants":{"productCard":[{"id":"classic","label":"Classique","description":"Carte traditionnelle avec bordures et fond distinct."},{"id":"minimal","label":"Minimaliste","description":"Design épuré, sans bordures, centré sur l'image."}],"promo":[{"id":"standard","label":"Standard (Clean)","description":"Bannière promo classique et élégante."},{"id":"timer","label":"Urgence (Timer)","description":"Ajoute un compte à rebours pour maximiser la pression."}],"newsletterSignup":[{"id":"modern","label":"Moderne (Capsule)","description":"Formulaire arrondi type 'pilule' avec ombre portée."},{"id":"minimal","label":"Minimaliste (Centré)","description":"Champs classiques soulignés ou simples, centrés."}],"testimonials":[{"id":"carousel","label":"Carrousel","description":"Défilement horizontal fluide."},{"id":"grid","label":"Grille (Wall)","description":"Mosaïque d'avis pour preuve sociale massive."}],"header":[{"id":"default","label":"Défaut (Gauche)","description":"Logo à gauche, liens et panier à droite."},{"id":"transparent","label":"Transparent","description":"Header superposé sur la bannière Hero."}],"hero":[{"id":"image","label":"Image de fond","description":"Un grand visuel avec un titre en superposition."},{"id":"gradient","label":"Dégradé de couleurs","description":"Un fond dynamique basé sur la palette du thème."},{"id":"minimal","label":"Minimaliste","description":"Un simple titre sur un fond uni."}],"productsByCategory":[{"id":"list","label":"Liste Verticale","description":"Toutes les catégories se suivent."},{"id":"carousel","label":"Le Switcher (Carrousel)","description":"Navigation horizontale entre catégories avec grid dynamique."}]},"settingsSchema":[{"type":"group","label":"Ordre des Sections (Layout)","fields":[{"id":"homePageSections","label":"Séquence de la Page","type":"repeater","itemFields":[{"id":"type","label":"Type de section","type":"select","options":[{"value":"hero","label":"1. Hero (Intro Impact)"},{"value":"painPoints","label":"2. Pain Points (Problématique)"},{"value":"featuredProduct","label":"3. Spotlight Product (Un seul)"},{"value":"featuredProducts","label":"4. Featured Products (Grille)"},{"value":"features","label":"5. Store Features (Atouts)"},{"value":"productsByCategory","label":"6. Category Switcher (Collections)"},{"value":"promoBanner","label":"7. Promo Banner (Offre Spéciale)"},{"value":"testimonials","label":"8. Testimonials (Preuve Sociale)"},{"value":"faq","label":"9. FAQ (Questions)"},{"value":"about","label":"10. Our Story (À Propos)"},{"value":"newsletterSignup","label":"11. Newsletter (Engagement)"}]}]}]},{"type":"group","label":"1. Hero (L'Impact)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero","default":"image"},{"id":"hero.title","label":"Titre Principal","type":"text","default":"Votre Titre Principal"},{"id":"hero.subtitle","label":"Sous-titre / Accroche","type":"textarea","default":"Une brève description de votre activité ou de votre proposition de valeur."},{"id":"hero.imageUrl","label":"Image de fond","type":"image","default":""},{"id":"hero.ctaButtonText","label":"Texte du bouton","type":"text","default":"Explorer"},{"id":"hero.ctaButtonUrl","label":"Lien du bouton","type":"select","options":[{"value":"/","label":"Accueil"},{"value":"/catalog","label":"Catalogue"},{"value":"/cart","label":"Panier"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#featuredProduct","label":"Ancre: Produit Vedette"},{"value":"#productsByCategory","label":"Ancre: Catégories"},{"value":"#features","label":"Ancre: Avantages"},{"value":"#testimonials","label":"Ancre: Témoignages"},{"value":"#faq","label":"Ancre: FAQ"},{"value":"#about","label":"Ancre: Notre Histoire"}],"default":"#featuredProducts"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text","default":"Problématique Client"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea","default":"Décrivez ici les défis majeurs rencontrés par vos clients."},{"id":"painPoints.items","label":"Problèmes","type":"repeater","default":[{"icon":"fas fa-ban","text":"Point de douleur 1"},{"icon":"fas fa-search","text":"Point de douleur 2"},{"icon":"fas fa-dollar-sign","text":"Point de douleur 3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Spotlight Product (Seul)","fields":[{"id":"featuredProduct.title","label":"Titre Alternatif","type":"text"},{"id":"featuredProduct.productId","label":"Sélectionner le Produit Star","type":"product_selector"}]},{"type":"group","label":"4. Featured Products (Liste)","fields":[{"id":"featuredProducts.title","label":"Titre du Bloc","type":"text","default":"Collection Vedette"},{"id":"featuredProducts.subtitle","label":"Sous-titre / Introduction","type":"textarea"},{"id":"featuredProducts.productIds","label":"Sélection des Produits","type":"products_selector"}]},{"type":"group","label":"5. Store Features (Atouts)","fields":[{"id":"features.title","label":"Titre","type":"text","default":"Fonctionnalités Clés"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Mettez en avant les points forts de votre produit ou service."},{"id":"features.items","label":"Points forts","type":"repeater","itemFields":[{"id":"title","label":"Nom de l'atout","type":"text"},{"id":"description","label":"Détails","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"default":[{"title":"Avantage 1","description":"Description détaillée de cet avantage concurrentiel.","image":""},{"title":"Avantage 2","description":"Description détaillée de ce second avantage.","image":""}]}]},{"type":"group","label":"6. Category Switcher","fields":[{"id":"productsByCategory.style","label":"Mode d'affichage","type":"variant_selector","variantId":"productsByCategory"},{"id":"productsByCategory.title","label":"Titre de section","type":"text"}]},{"type":"group","label":"7. Promotion & Offre","fields":[{"id":"promo.style","label":"Style d'affichage","type":"variant_selector","variantId":"promo","default":"standard"},{"id":"promo.title","label":"Titre","type":"text","default":"Offre Spéciale"},{"id":"promo.subtitle","label":"Sous-titre","type":"text","default":"Détails de votre offre promotionnelle à durée limitée."},{"id":"promo.endDate","label":"Date de fin (YYYY-MM-DD HH:MM)","type":"text","default":"2026-12-31 23:59"},{"id":"promo.buttonText","label":"Texte Bouton","type":"text","default":"Profiter"},{"id":"promo.buttonUrl","label":"Lien Promotion","type":"select","options":[{"value":"/catalog","label":"Catalogue"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#","label":"Haut de page"}],"default":"#featuredProducts"}]},{"type":"group","label":"8. Témoignages Clients","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials","default":"carousel"},{"id":"testimonials.title","label":"Titre de la Section","type":"text","default":"Témoignages Clients"},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"name","label":"Nom de l'auteur","type":"text"},{"id":"quote","label":"Message","type":"textarea"}],"default":[{"name":"Client","quote":"Message de satisfaction client."}]}]},{"type":"group","label":"9. FAQ (Questions)","fields":[{"id":"faq.title","label":"Titre FAQ","type":"text","default":"Questions Fréquentes"},{"id":"faq.items","label":"Questions / Réponses","type":"repeater","itemFields":[{"id":"question","label":"La Question","type":"text"},{"id":"answer","label":"La Réponse","type":"textarea"}],"default":[{"question":"Question ?","answer":"Réponse."}]}]},{"type":"group","label":"10. Notre Histoire (À Propos)","fields":[{"id":"about.title","label":"Titre","type":"text","default":"Notre Histoire"},{"id":"about.content","label":"Texte principal","type":"textarea"},{"id":"about.engagements","label":"Engagements & Valeurs","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"icon","label":"Icône","type":"text"}]}]},{"type":"group","label":"11. Newsletter (Capture)","fields":[{"id":"newsletterSignup.style","label":"Style d'affichage","type":"variant_selector","variantId":"newsletterSignup","default":"modern"},{"id":"newsletterSignup.title","label":"Titre d'Incitation","type":"text","default":"Rejoignez-nous"},{"id":"newsletterSignup.subtitle","label":"Argument de vente","type":"text"}]},{"type":"group","label":"Branding & Couleurs","fields":[{"id":"palette.background","label":"Couleur de Fond","type":"color"},{"id":"palette.text","label":"Couleur du Texte","type":"color"},{"id":"palette.textMuted","label":"Texte Secondaire","type":"color"},{"id":"palette.primary","label":"Couleur Primaire","type":"color"},{"id":"palette.secondary","label":"Couleur Secondaire","type":"color"},{"id":"palette.accent","label":"Couleur d'Accent","type":"color"},{"id":"palette.cardBackground","label":"Fond des Cartes","type":"color"},{"id":"palette.cardBorder","label":"Bordures des Cartes","type":"color"}]},{"type":"group","label":"Styles UI Globaux","fields":[{"id":"header.style","label":"Variante Header","type":"variant_selector","variantId":"header"},{"id":"productCard.style","label":"Variante Cartes Produit","type":"variant_selector","variantId":"productCard"}]}],"settings":{"homePageSections":[],"hero":{"style":"image","title":"Votre Titre Principal","subtitle":"Une brève description de votre activité ou de votre proposition de valeur.","imageUrl":"","ctaButtonText":"Explorer","ctaButtonUrl":"#featuredProducts"},"painPoints":{"title":"Problématique Client","subtitle":"Décrivez ici les défis majeurs rencontrés par vos clients."},"painPoints.items":[{"icon":"fas fa-ban","text":"Point de douleur 1"},{"icon":"fas fa-search","text":"Point de douleur 2"},{"icon":"fas fa-dollar-sign","text":"Point de douleur 3"}],"featuredProducts":{"title":"Collection Vedette"},"features":{"title":"Fonctionnalités Clés","subtitle":"Mettez en avant les points forts de votre produit ou service."},"features.items":[{"title":"Avantage 1","description":"Description détaillée de cet avantage concurrentiel.","image":""},{"title":"Avantage 2","description":"Description détaillée de ce second avantage.","image":""}],"promo":{"style":"standard","title":"Offre Spéciale","subtitle":"Détails de votre offre promotionnelle à durée limitée.","endDate":"2026-12-31 23:59","buttonText":"Profiter","buttonUrl":"#featuredProducts"},"testimonials":{"style":"carousel","title":"Témoignages Clients"},"testimonials.items":[{"name":"Client","quote":"Message de satisfaction client."}],"faq":{"title":"Questions Fréquentes"},"faq.items":[{"question":"Question ?","answer":"Réponse."}],"about":{"title":"Notre Histoire"},"about.engagements":[],"newsletterSignup":{"style":"modern","title":"Rejoignez-nous"},"computedPalette":{"background":"#0A0E1A","text":"#E0E6F0","primary":"#007AFF","secondary":"#5C6B73","accent":"#00D9FF","cardBackground":"#1C202E","textMuted":"#606470","cardBorder":"#343845","inputBackground":"#222738","chatResponseBackground":"#0d1221","primary600":"#0066d6","primary700":"#0058b8","secondary600":"#4e5b62"},"computedCssVars":"--bg-color: #0A0E1A;\n  --text-color: #E0E6F0;\n  --primary-color: #007AFF;\n  --secondary-color: #5C6B73;\n  --accent-color: #00D9FF;\n  --text-muted-color: #606470;\n  --card-bg-color: #1C202E;\n  --card-border-color: #343845;\n  --input-bg-color: #222738;\n  --chat-response-bg-color: #0d1221;\n  --primary-600: #0066d6;\n  --primary-700: #0058b8;\n  --secondary-600: #4e5b62;\n  --contrast-text-bg: 15.354725842427566;"},"baseTemplate":"crystal"},"apiEndpoints":{"stacy":"https://us-central1-zflex-wizard.cloudfunctions.net/askStacyApi","resumeConv":"https://us-central1-zflex-wizard.cloudfunctions.net/resumeConversationApi","createConv":"https://us-central1-zflex-wizard.cloudfunctions.net/createConversationApi","continueConv":"https://us-central1-zflex-wizard.cloudfunctions.net/continueConversationApi","createOrder":"https://us-central1-zflex-wizard.cloudfunctions.net/createOrderApi","subscribeToNewsletter":"https://us-central1-zflex-wizard.cloudfunctions.net/subscribeToNewsletterApi","submitReview":"https://us-central1-zflex-wizard.cloudfunctions.net/submitReviewApi","getOrderDetails":"https://us-central1-zflex-wizard.cloudfunctions.net/getOrderApi","trackEvent":"https://us-central1-zflex-wizard.cloudfunctions.net/tracker","initiatePayment":"https://us-central1-zflex-wizard.cloudfunctions.net/initiatePayment","getOrderStatusApi":"https://us-central1-zflex-wizard.cloudfunctions.net/getOrderStatusApi","getProspectInfo":"https://us-central1-zflex-wizard.cloudfunctions.net/getProspectInfo"}}</script><div data-zflex-section="hero"><div data-zflex-variant-container="hero"><section class="relative min-h-[70vh] flex items-center py-20 overflow-hidden"><div class="absolute inset-0 bg-cover bg-center z-0" style="background-color: var(--primary-color); --hero-img: url('https://images.unsplash.com/photo-1762279389051-c4b29456fbc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjBsaWdodCUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDB8MHx8fDE3NzAxMzc2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080'); background-image: var(--hero-img);" data-zflex-id="hero.imageUrl" data-zflex-bind="imageUrl" data-zflex-bg-hero></div><div class="absolute inset-0 bg-black/40 z-0"></div><div class="container mx-auto px-6 relative z-20 text-center text-white"><h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight" data-zflex-id="hero.title" data-zflex-bind="title">Fearlessalan&#39;sBrain: Learning to think.</h1><p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 leading-relaxed" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Des solutions algorithmiques avancées pour résoudre vos problèmes complexes et stimuler votre croissance.</p><a href="#features" class="zflex-link bg-white text-black px-10 py-4 rounded-full font-extrabold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 inline-block" data-analytics-type="click_hero_cta" data-analytics-payload="{&quot;title&quot;:&quot;Fearlessalan'sBrain: Learning to think.&quot;,&quot;cta_text&quot;:&quot;Découvrir Nos Solutions&quot;}"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Découvrir Nos Solutions</span></a></div></section></div><template data-zflex-variant="hero.image"><section class="relative min-h-[70vh] flex items-center py-20 overflow-hidden"><div class="absolute inset-0 bg-cover bg-center z-0" style="background-color: var(--primary-color); --hero-img: url(''); background-image: var(--hero-img);" data-zflex-id="hero.imageUrl" data-zflex-bind="imageUrl" data-zflex-bg-hero></div><div class="absolute inset-0 bg-black/40 z-0"></div><div class="container mx-auto px-6 relative z-20 text-center text-white"><h1 class="text-5xl md:text-7xl font-bold mb-6" data-zflex-id="hero.title" data-zflex-bind="title">Titre Hero</h1><p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Sous-titre...</p><div class="bg-white text-black px-10 py-4 rounded-full font-bold inline-block"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Bouton</span></div></div></section></template><template data-zflex-variant="hero.gradient"><section class="relative min-h-[60vh] flex items-center py-20 text-center text-white" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));"><div class="container mx-auto px-6 relative z-10"><h1 class="text-5xl md:text-7xl font-bold mb-6" data-zflex-id="hero.title" data-zflex-bind="title">Titre Hero</h1><p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Sous-titre...</p><div class="bg-white text-black px-10 py-4 rounded-full font-bold inline-block"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Bouton</span></div></div></section></template><template data-zflex-variant="hero.minimal"><section class="py-24 text-center" style="background-color: var(--bg-color);"><div class="container mx-auto px-6"><h1 class="text-5xl md:text-7xl font-bold mb-6" style="color: var(--text-color);" data-zflex-id="hero.title" data-zflex-bind="title">Titre Hero</h1><p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10" style="color: var(--text-muted-color);" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Sous-titre...</p><div class="px-10 py-4 rounded-full font-bold transition-all inline-block" style="background-color: var(--primary-color); color: white;"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Bouton</span></div></div></section></template></div><section data-zflex-section="painPoints" class="py-16 md:py-24" style="background-color: var(--bg-color)"><div class="container mx-auto px-6"><div class="max-w-3xl mx-auto text-center mb-16"><h2 class="text-3xl md:text-5xl font-bold mb-6" style="color: var(--text-color)" data-zflex-id="painPoints.title" data-zflex-bind="title">Vos Défis, Nos Solutions Intelligentes</h2><p class="text-lg md:text-xl" style="color: var(--text-muted-color)" data-zflex-id="painPoints.subtitle" data-zflex-bind="subtitle">Nous transformons les obstacles techniques et opérationnels en opportunités stratégiques.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12" data-zflex-repeater="painPoints.items"><div class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg" style="background-color: var(--card-bg-color);
-          border: 1px solid var(--card-border-color);"><div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"><i class="fas fa-brain text-2xl" data-zflex-id="painPoints.items.0.icon" data-zflex-bind="icon"></i></div><div><p class="text-lg font-medium" style="color: var(--text-color)" data-zflex-id="painPoints.items.0.text" data-zflex-bind="text">Difficulté à extraire des insights pertinents de vos données massives ?</p></div></div><div class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg" style="background-color: var(--card-bg-color);
-          border: 1px solid var(--card-border-color);"><div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"><i class="fas fa-cogs text-2xl" data-zflex-id="painPoints.items.1.icon" data-zflex-bind="icon"></i></div><div><p class="text-lg font-medium" style="color: var(--text-color)" data-zflex-id="painPoints.items.1.text" data-zflex-bind="text">Processus opérationnels lents et inefficaces, freinant votre productivité ?</p></div></div><div class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg" style="background-color: var(--card-bg-color);
-          border: 1px solid var(--card-border-color);"><div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"><i class="fas fa-chart-line text-2xl" data-zflex-id="painPoints.items.2.icon" data-zflex-bind="icon"></i></div><div><p class="text-lg font-medium" style="color: var(--text-color)" data-zflex-id="painPoints.items.2.text" data-zflex-bind="text">Manque de visibilité sur les tendances futures et les opportunités de marché ?</p></div></div><div class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg" style="background-color: var(--card-bg-color);
-          border: 1px solid var(--card-border-color);"><div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"><i class="fas fa-shield-alt text-2xl" data-zflex-id="painPoints.items.3.icon" data-zflex-bind="icon"></i></div><div><p class="text-lg font-medium" style="color: var(--text-color)" data-zflex-id="painPoints.items.3.text" data-zflex-bind="text">Prise de décision complexe sans outils d&#39;aide fiables et prédictifs ?</p></div></div></div></div><template data-zflex-template="painPoints.items"><div class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg" style="background-color: var(--card-bg-color); border: 1px solid var(--card-border-color);"><div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"><i class="text-2xl" data-zflex-bind="icon"></i></div><div><p class="text-lg font-medium" style="color: var(--text-color)" data-zflex-bind="text">Point de douleur...</p></div></div></template></section><section data-zflex-section="features" class="py-16 md:py-24" style="background-color: var(--bg-color)"><div class="container mx-auto px-6"><div class="text-center mb-16"><h2 class="text-3xl md:text-5xl font-bold mb-4" style="color: var(--text-color)" data-zflex-id="features.title" data-zflex-bind="title">Nos Solutions Algorithmiques : L&#39;Intelligence au Service de Votre Croissance</h2><p class="text-lg md:text-xl max-w-2xl mx-auto" style="color: var(--text-muted-color)" data-zflex-id="features.subtitle" data-zflex-bind="subtitle">Transformez vos défis en avantages compétitifs durables.</p></div><div class="space-y-20 md:space-y-32" data-zflex-repeater="features.items"><div class="flex flex-col md:flex-row items-center gap-12"><div class="w-full md:w-1/2"><div class="relative group"><div class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div><img src="https://images.unsplash.com/photo-1762279389051-c4b29456fbc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjBsaWdodCUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDB8MHx8fDE3NzAxMzc2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Optimisation des Processus" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" data-zflex-id="features.items.0.image" data-zflex-bind="image"></div></div><div class="w-full md:w-1/2"><div class="max-w-lg"><h3 class="text-2xl md:text-4xl font-bold mb-6" style="color: var(--text-color)" data-zflex-id="features.items.0.title" data-zflex-bind="title">Optimisation des Processus</h3><p class="text-lg leading-relaxed mb-8" style="color: var(--text-muted-color)" data-zflex-id="features.items.0.description" data-zflex-bind="description">Réduisez les coûts et augmentez l&#39;efficacité grâce à des algorithmes qui rationalisent vos opérations.</p></div></div></div><div class="flex flex-col md:flex-row-reverse items-center gap-12"><div class="w-full md:w-1/2"><div class="relative group"><div class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div><img src="https://images.unsplash.com/photo-1762279388952-85187155e48d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxnZW9tZXRyaWMlMjBsaWdodCUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDB8MHx8fDE3NzAxMzc2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Analyse Prédictive Avancée" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" data-zflex-id="features.items.1.image" data-zflex-bind="image"></div></div><div class="w-full md:w-1/2"><div class="max-w-lg md:ml-auto"><h3 class="text-2xl md:text-4xl font-bold mb-6" style="color: var(--text-color)" data-zflex-id="features.items.1.title" data-zflex-bind="title">Analyse Prédictive Avancée</h3><p class="text-lg leading-relaxed mb-8" style="color: var(--text-muted-color)" data-zflex-id="features.items.1.description" data-zflex-bind="description">Anticipez les tendances du marché et les comportements clients pour une planification stratégique proactive.</p></div></div></div><div class="flex flex-col md:flex-row items-center gap-12"><div class="w-full md:w-1/2"><div class="relative group"><div class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div><img src="https://images.unsplash.com/photo-1603847734787-9e8a3f3e9d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwY3J5c3RhbCUyMG5ldHdvcmslMjBhYnN0cmFjdHxlbnwwfDB8fHwxNzcwMTM3NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Automatisation Intelligente" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" data-zflex-id="features.items.2.image" data-zflex-bind="image"></div></div><div class="w-full md:w-1/2"><div class="max-w-lg"><h3 class="text-2xl md:text-4xl font-bold mb-6" style="color: var(--text-color)" data-zflex-id="features.items.2.title" data-zflex-bind="title">Automatisation Intelligente</h3><p class="text-lg leading-relaxed mb-8" style="color: var(--text-muted-color)" data-zflex-id="features.items.2.description" data-zflex-bind="description">Libérez vos équipes des tâches répétitives grâce à des solutions logicielles autonomes et performantes.</p></div></div></div><div class="flex flex-col md:flex-row-reverse items-center gap-12"><div class="w-full md:w-1/2"><div class="relative group"><div class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div><img src="https://images.unsplash.com/photo-1732082052116-f79e1bfbc0cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwY3J5c3RhbCUyMG5ldHdvcmslMjBhYnN0cmFjdHxlbnwwfDB8fHwxNzcwMTM3NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Personnalisation à Grande Échelle" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" data-zflex-id="features.items.3.image" data-zflex-bind="image"></div></div><div class="w-full md:w-1/2"><div class="max-w-lg md:ml-auto"><h3 class="text-2xl md:text-4xl font-bold mb-6" style="color: var(--text-color)" data-zflex-id="features.items.3.title" data-zflex-bind="title">Personnalisation à Grande Échelle</h3><p class="text-lg leading-relaxed mb-8" style="color: var(--text-muted-color)" data-zflex-id="features.items.3.description" data-zflex-bind="description">Offrez des expériences uniques à vos clients grâce à des algorithmes qui s&#39;adaptent à leurs besoins individuels.</p></div></div></div></div></div><template data-zflex-template="features.items"><div class="flex flex-col md:flex-row items-center gap-12 feature-blueprint"><div class="w-full md:w-1/2"><div class="relative group"><img src="" alt="Feature" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" data-zflex-bind="image"></div></div><div class="w-full md:w-1/2"><div class="max-w-lg"><h3 class="text-2xl md:text-4xl font-bold mb-6" style="color: var(--text-color)" data-zflex-bind="title">Titre</h3><p class="text-lg leading-relaxed mb-8" style="color: var(--text-muted-color)" data-zflex-bind="description">Description...</p></div></div></div></template></section><section data-zflex-section="testimonials" class="py-16 md:py-24" style="background-color: var(--bg-color)"><div data-zflex-variant-container="testimonials"><div class="container mx-auto px-6"><h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-id="testimonials.title" data-zflex-bind="title">Ce Que Nos Partenaires Disent de Nous</h2><div class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide" data-zflex-repeater="testimonials.items"><div class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;" data-zflex-id="testimonials.items.0"><i class="fas fa-quote-left text-3xl mb-4 opacity-20" style="color: var(--primary-color)"></i><p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-id="testimonials.items.0.quote" data-zflex-bind="quote">"Fearlessalan&#39;sBrain a révolutionné notre approche de l&#39;analyse de données. Leurs algorithmes nous ont permis de découvrir des corrélations inattendues, ouvrant la voie à de nouvelles stratégies de marché. Un véritable partenaire d&#39;innovation !"</p><div class="flex items-center"><div class="h-1 w-8 mr-3" style="background-color: var(--primary-color)"></div><p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-id="testimonials.items.0.name" data-zflex-bind="name">Dr. Élodie Dubois, CEO de TechInnov</p></div></div><div class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;" data-zflex-id="testimonials.items.1"><i class="fas fa-quote-left text-3xl mb-4 opacity-20" style="color: var(--primary-color)"></i><p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-id="testimonials.items.1.quote" data-zflex-bind="quote">"L&#39;implémentation de leurs solutions logicielles a optimisé nos chaînes d&#39;approvisionnement de manière spectaculaire. Nous avons réduit nos coûts de 15% et amélioré notre réactivité. Leur expertise est inégalée."</p><div class="flex items-center"><div class="h-1 w-8 mr-3" style="background-color: var(--primary-color)"></div><p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-id="testimonials.items.1.name" data-zflex-bind="name">Marc Lefevre, Directeur Opérationnel chez OptiLogix</p></div></div><div class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;" data-zflex-id="testimonials.items.2"><i class="fas fa-quote-left text-3xl mb-4 opacity-20" style="color: var(--primary-color)"></i><p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-id="testimonials.items.2.quote" data-zflex-bind="quote">"Leur capacité à &#39;faire penser&#39; nos systèmes est bluffante. Nous avons pu accélérer nos cycles de recherche et développement grâce à des outils prédictifs sur mesure. Une équipe brillante et avant-gardiste."</p><div class="flex items-center"><div class="h-1 w-8 mr-3" style="background-color: var(--primary-color)"></div><p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-id="testimonials.items.2.name" data-zflex-bind="name">Sophie Chen, Responsable R&amp;D chez BioGenius</p></div></div><div class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;" data-zflex-id="testimonials.items.3"><i class="fas fa-quote-left text-3xl mb-4 opacity-20" style="color: var(--primary-color)"></i><p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-id="testimonials.items.3.quote" data-zflex-bind="quote">"En tant que startup, nous avions besoin de solutions agiles et puissantes. Fearlessalan&#39;sBrain a su nous fournir des algorithmes qui ont propulsé notre croissance et solidifié notre positionnement sur le marché."</p><div class="flex items-center"><div class="h-1 w-8 mr-3" style="background-color: var(--primary-color)"></div><p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-id="testimonials.items.3.name" data-zflex-bind="name">Antoine Girard, Fondateur de StartUpX</p></div></div></div></div></div><template data-zflex-variant="testimonials.grid"><div class="container mx-auto px-6"><h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2><div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-zflex-repeater="testimonials.items"></div></div></template><template data-zflex-variant="testimonials.carousel"><div class="container mx-auto px-6"><h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2><div class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide" data-zflex-repeater="testimonials.items"></div></div></template><template data-zflex-template="testimonials.items"><div class="p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"><div class="flex text-yellow-500 mb-4 divider-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-bind="quote">"Une expérience incroyable..."</p><p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-bind="name">Nom Client</p></div></template></section><section id="about" data-zflex-section="about" class="py-16 md:py-24" style="background-color: var(--card-bg-color);
-    border-bottom: 1px solid var(--card-border-color);"><div class="container mx-auto px-6"><div class="max-w-4xl mx-auto text-center"><h2 class="text-3xl md:text-5xl font-bold mb-8" style="color: var(--text-color)" data-zflex-id="about.title" data-zflex-bind="title">Notre Mission : Éveiller le Potentiel de Votre Entreprise</h2><div class="prose prose-lg max-w-none mx-auto text-lg md:text-xl leading-relaxed" style="color: var(--text-muted-color)" data-zflex-id="about.content" data-zflex-bind="content">Chez Fearlessalan'sBrain, nous croyons que chaque entreprise peut 'apprendre à penser' de manière plus efficace. Nous sommes une équipe d'experts en algorithmes et en stratégies logicielles, dédiés à transformer les défis complexes en avantages compétitifs. Notre approche est fondée sur la clarté, l'efficacité et une vision avant-gardiste, garantissant des solutions sur mesure qui optimisent vos processus, améliorent votre prise de décision et stimulent une croissance durable.</div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20" data-zflex-repeater="about.engagements"><div class="text-center group" data-zflex-id="about.engagements.0"><div class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg" style="background-color: var(--primary-color); color: white"><i class="fas fas fa-lightbulb text-2xl" data-zflex-id="about.engagements.0.icon" data-zflex-bind="icon"></i></div><h3 class="font-bold text-xl mb-3" style="color: var(--text-color)" data-zflex-id="about.engagements.0.title" data-zflex-bind="title">Innovation Continue</h3><p class="text-lg opacity-80" style="color: var(--text-muted-color)" data-zflex-id="about.engagements.0.description" data-zflex-bind="description">Nous sommes à la pointe de la recherche et du développement algorithmique pour vous offrir les solutions les plus avancées.</p></div><div class="text-center group" data-zflex-id="about.engagements.1"><div class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg" style="background-color: var(--primary-color); color: white"><i class="fas fas fa-eye text-2xl" data-zflex-id="about.engagements.1.icon" data-zflex-bind="icon"></i></div><h3 class="font-bold text-xl mb-3" style="color: var(--text-color)" data-zflex-id="about.engagements.1.title" data-zflex-bind="title">Clarté et Transparence</h3><p class="text-lg opacity-80" style="color: var(--text-muted-color)" data-zflex-id="about.engagements.1.description" data-zflex-bind="description">Nos stratégies sont conçues pour être compréhensibles et leurs impacts mesurables, sans jargon inutile.</p></div><div class="text-center group" data-zflex-id="about.engagements.2"><div class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg" style="background-color: var(--primary-color); color: white"><i class="fas fas fa-rocket text-2xl" data-zflex-id="about.engagements.2.icon" data-zflex-bind="icon"></i></div><h3 class="font-bold text-xl mb-3" style="color: var(--text-color)" data-zflex-id="about.engagements.2.title" data-zflex-bind="title">Efficacité Optimale</h3><p class="text-lg opacity-80" style="color: var(--text-muted-color)" data-zflex-id="about.engagements.2.description" data-zflex-bind="description">Chaque solution est pensée pour maximiser la performance et minimiser les ressources, pour un ROI maximal.</p></div><div class="text-center group" data-zflex-id="about.engagements.3"><div class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg" style="background-color: var(--primary-color); color: white"><i class="fas fas fa-handshake text-2xl" data-zflex-id="about.engagements.3.icon" data-zflex-bind="icon"></i></div><h3 class="font-bold text-xl mb-3" style="color: var(--text-color)" data-zflex-id="about.engagements.3.title" data-zflex-bind="title">Partenariat Stratégique</h3><p class="text-lg opacity-80" style="color: var(--text-muted-color)" data-zflex-id="about.engagements.3.description" data-zflex-bind="description">Nous travaillons main dans la main avec vous pour comprendre vos besoins uniques et co-créer votre succès.</p></div></div><template data-zflex-template="about.engagements"><div class="text-center group"><div class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 shadow-lg" style="background-color: var(--primary-color); color: white"><i class="fas fa-star text-2xl" data-zflex-bind="icon"></i></div><h3 class="font-bold text-xl mb-3" data-zflex-bind="title">Engagement</h3><p class="text-lg opacity-80" data-zflex-bind="description">Description de l'engagement...</p></div></template></div></section><section data-zflex-section="faq" class="py-16 md:py-24" style="background-color: var(--bg-color)"><div class="container mx-auto px-6"><div class="max-w-3xl mx-auto"><h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-id="faq.title" data-zflex-bind="title">Questions Fréquentes sur l&#39;Intelligence Algorithmique</h2><script type="application/ld+json">{
+<!-- =================================================================================================
+// FRAGMENT : home.njk - V8.0 (VANDAL ENGINE)
+// Page builder dynamique supportant le storytelling et le catalogue.
+// ================================================================================================= -->
+
+<main data-page-type="home" data-page-title="Fearlessalan&#39;sBrain | Learning to think">
+  <script class="zflex-fragment-data" type="application/json">
+    {"page":{"url":"/"},"storeId":"mUeulkqk6ifOTDauusjn","theme":{"themeId":"crystal","version":"1.3.0","manifestUpdatedAt":{"_seconds":1770137698,"_nanoseconds":381000000},"manifest":{"settingsSchema":[{"type":"group","label":"Ordre des Sections (Layout)","fields":[{"id":"homePageSections","label":"Séquence de la Page","type":"repeater","itemFields":[{"id":"type","label":"Type de section","type":"select","options":[{"value":"hero","label":"1. Hero (Intro Impact)"},{"value":"painPoints","label":"2. Pain Points (Problématique)"},{"value":"featuredProduct","label":"3. Spotlight Product (Un seul)"},{"value":"featuredProducts","label":"4. Featured Products (Grille)"},{"value":"features","label":"5. Store Features (Atouts)"},{"value":"productsByCategory","label":"6. Category Switcher (Collections)"},{"value":"promoBanner","label":"7. Promo Banner (Offre Spéciale)"},{"value":"testimonials","label":"8. Testimonials (Preuve Sociale)"},{"value":"faq","label":"9. FAQ (Questions)"},{"value":"about","label":"10. Our Story (À Propos)"},{"value":"newsletterSignup","label":"11. Newsletter (Engagement)"}]}]}]},{"type":"group","label":"1. Hero (L'Impact)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero","default":"image"},{"id":"hero.title","label":"Titre Principal","type":"text","default":"Votre Titre Principal"},{"id":"hero.subtitle","label":"Sous-titre / Accroche","type":"textarea","default":"Une brève description de votre activité ou de votre proposition de valeur."},{"id":"hero.imageUrl","label":"Image de fond","type":"image","default":""},{"id":"hero.ctaButtonText","label":"Texte du bouton","type":"text","default":"Explorer"},{"id":"hero.ctaButtonUrl","label":"Lien du bouton","type":"select","options":[{"value":"/","label":"Accueil"},{"value":"/catalog","label":"Catalogue"},{"value":"/cart","label":"Panier"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#featuredProduct","label":"Ancre: Produit Vedette"},{"value":"#productsByCategory","label":"Ancre: Catégories"},{"value":"#features","label":"Ancre: Avantages"},{"value":"#testimonials","label":"Ancre: Témoignages"},{"value":"#faq","label":"Ancre: FAQ"},{"value":"#about","label":"Ancre: Notre Histoire"}],"default":"#featuredProducts"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text","default":"Problématique Client"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea","default":"Décrivez ici les défis majeurs rencontrés par vos clients."},{"id":"painPoints.items","label":"Problèmes","type":"repeater","default":[{"icon":"fas fa-ban","text":"Point de douleur 1"},{"icon":"fas fa-search","text":"Point de douleur 2"},{"icon":"fas fa-dollar-sign","text":"Point de douleur 3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Spotlight Product (Seul)","fields":[{"id":"featuredProduct.title","label":"Titre Alternatif","type":"text"},{"id":"featuredProduct.productId","label":"Sélectionner le Produit Star","type":"product_selector"}]},{"type":"group","label":"4. Featured Products (Liste)","fields":[{"id":"featuredProducts.title","label":"Titre du Bloc","type":"text","default":"Collection Vedette"},{"id":"featuredProducts.subtitle","label":"Sous-titre / Introduction","type":"textarea"},{"id":"featuredProducts.productIds","label":"Sélection des Produits","type":"products_selector"}]},{"type":"group","label":"5. Store Features (Atouts)","fields":[{"id":"features.title","label":"Titre","type":"text","default":"Fonctionnalités Clés"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Mettez en avant les points forts de votre produit ou service."},{"id":"features.items","label":"Points forts","type":"repeater","itemFields":[{"id":"title","label":"Nom de l'atout","type":"text"},{"id":"description","label":"Détails","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"default":[{"title":"Avantage 1","description":"Description détaillée de cet avantage concurrentiel.","image":""},{"title":"Avantage 2","description":"Description détaillée de ce second avantage.","image":""}]}]},{"type":"group","label":"6. Category Switcher","fields":[{"id":"productsByCategory.style","label":"Mode d'affichage","type":"variant_selector","variantId":"productsByCategory"},{"id":"productsByCategory.title","label":"Titre de section","type":"text"}]},{"type":"group","label":"7. Promotion & Offre","fields":[{"id":"promo.style","label":"Style d'affichage","type":"variant_selector","variantId":"promo","default":"standard"},{"id":"promo.title","label":"Titre","type":"text","default":"Offre Spéciale"},{"id":"promo.subtitle","label":"Sous-titre","type":"text","default":"Détails de votre offre promotionnelle à durée limitée."},{"id":"promo.endDate","label":"Date de fin (YYYY-MM-DD HH:MM)","type":"text","default":"2026-12-31 23:59"},{"id":"promo.buttonText","label":"Texte Bouton","type":"text","default":"Profiter"},{"id":"promo.buttonUrl","label":"Lien Promotion","type":"select","options":[{"value":"/catalog","label":"Catalogue"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#","label":"Haut de page"}],"default":"#featuredProducts"}]},{"type":"group","label":"8. Témoignages Clients","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials","default":"carousel"},{"id":"testimonials.title","label":"Titre de la Section","type":"text","default":"Témoignages Clients"},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"name","label":"Nom de l'auteur","type":"text"},{"id":"quote","label":"Message","type":"textarea"}],"default":[{"name":"Client","quote":"Message de satisfaction client."}]}]},{"type":"group","label":"9. FAQ (Questions)","fields":[{"id":"faq.title","label":"Titre FAQ","type":"text","default":"Questions Fréquentes"},{"id":"faq.items","label":"Questions / Réponses","type":"repeater","itemFields":[{"id":"question","label":"La Question","type":"text"},{"id":"answer","label":"La Réponse","type":"textarea"}],"default":[{"question":"Question ?","answer":"Réponse."}]}]},{"type":"group","label":"10. Notre Histoire (À Propos)","fields":[{"id":"about.title","label":"Titre","type":"text","default":"Notre Histoire"},{"id":"about.content","label":"Texte principal","type":"textarea"},{"id":"about.engagements","label":"Engagements & Valeurs","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"icon","label":"Icône","type":"text"}]}]},{"type":"group","label":"11. Newsletter (Capture)","fields":[{"id":"newsletterSignup.style","label":"Style d'affichage","type":"variant_selector","variantId":"newsletterSignup","default":"modern"},{"id":"newsletterSignup.title","label":"Titre d'Incitation","type":"text","default":"Rejoignez-nous"},{"id":"newsletterSignup.subtitle","label":"Argument de vente","type":"text"}]},{"type":"group","label":"Branding & Couleurs","fields":[{"id":"palette.background","label":"Couleur de Fond","type":"color"},{"id":"palette.text","label":"Couleur du Texte","type":"color"},{"id":"palette.textMuted","label":"Texte Secondaire","type":"color"},{"id":"palette.primary","label":"Couleur Primaire","type":"color"},{"id":"palette.secondary","label":"Couleur Secondaire","type":"color"},{"id":"palette.accent","label":"Couleur d'Accent","type":"color"},{"id":"palette.cardBackground","label":"Fond des Cartes","type":"color"},{"id":"palette.cardBorder","label":"Bordures des Cartes","type":"color"}]},{"type":"group","label":"Styles UI Globaux","fields":[{"id":"header.style","label":"Variante Header","type":"variant_selector","variantId":"header"},{"id":"productCard.style","label":"Variante Cartes Produit","type":"variant_selector","variantId":"productCard"}]}],"author":"zFlex Vandal Architect","magicSuggestions":[{"label":"✨ Mode Catalogue","prompt":"Organise ma boutique pour mettre mes catégories en avant avec un défilement fluide, parfait pour parcourir toute ma collection en un clin d'œil."},{"label":"💎 Épure Luxe","prompt":"Crée une ambiance de bijouterie haut de gamme : beaucoup d'espace, un fond d'un blanc pur et un design de carte produit minimaliste qui sublime mes créations."},{"label":"📈 Mur de Confiance","prompt":"Affiche fièrement la satisfaction de mes clients avec une grille d'avis massive juste sous mes produits phares pour transformer chaque visiteur en acheteur."},{"label":"⚡ Look Immersion","prompt":"Donne un aspect moderne et épuré en faisant fondre mon menu dans une grande image d'accueil plein écran pour une première impression mémorable."},{"label":"🛍️ Parcours Zen","prompt":"Rends l'expérience d'achat ultra-directe en allant droit à l'essentiel : une belle intro, mon produit star et une offre promotionnelle percutante."}],"name":"Crystal","description":"Une philosophie de clarté et de modularité. Idéal pour les catalogues produits riches et les marques qui privilégient une expérience utilisateur directe et élégante. Supporte désormais le storytelling narratif complet.","variants":{"productCard":[{"id":"classic","label":"Classique","description":"Carte traditionnelle avec bordures et fond distinct."},{"id":"minimal","label":"Minimaliste","description":"Design épuré, sans bordures, centré sur l'image."}],"promo":[{"id":"standard","label":"Standard (Clean)","description":"Bannière promo classique et élégante."},{"id":"timer","label":"Urgence (Timer)","description":"Ajoute un compte à rebours pour maximiser la pression."}],"newsletterSignup":[{"id":"modern","label":"Moderne (Capsule)","description":"Formulaire arrondi type 'pilule' avec ombre portée."},{"id":"minimal","label":"Minimaliste (Centré)","description":"Champs classiques soulignés ou simples, centrés."}],"testimonials":[{"id":"carousel","label":"Carrousel","description":"Défilement horizontal fluide."},{"id":"grid","label":"Grille (Wall)","description":"Mosaïque d'avis pour preuve sociale massive."}],"header":[{"id":"default","label":"Défaut (Gauche)","description":"Logo à gauche, liens et panier à droite."},{"id":"transparent","label":"Transparent","description":"Header superposé sur la bannière Hero."}],"hero":[{"id":"image","label":"Image de fond","description":"Un grand visuel avec un titre en superposition."},{"id":"gradient","label":"Dégradé de couleurs","description":"Un fond dynamique basé sur la palette du thème."},{"id":"minimal","label":"Minimaliste","description":"Un simple titre sur un fond uni."}],"productsByCategory":[{"id":"list","label":"Liste Verticale","description":"Toutes les catégories se suivent."},{"id":"carousel","label":"Le Switcher (Carrousel)","description":"Navigation horizontale entre catégories avec grid dynamique."}]},"version":"1.3.0"},"variants":{"productCard":[{"id":"classic","label":"Classique","description":"Carte traditionnelle avec bordures et fond distinct."},{"id":"minimal","label":"Minimaliste","description":"Design épuré, sans bordures, centré sur l'image."}],"promo":[{"id":"standard","label":"Standard (Clean)","description":"Bannière promo classique et élégante."},{"id":"timer","label":"Urgence (Timer)","description":"Ajoute un compte à rebours pour maximiser la pression."}],"newsletterSignup":[{"id":"modern","label":"Moderne (Capsule)","description":"Formulaire arrondi type 'pilule' avec ombre portée."},{"id":"minimal","label":"Minimaliste (Centré)","description":"Champs classiques soulignés ou simples, centrés."}],"testimonials":[{"id":"carousel","label":"Carrousel","description":"Défilement horizontal fluide."},{"id":"grid","label":"Grille (Wall)","description":"Mosaïque d'avis pour preuve sociale massive."}],"header":[{"id":"default","label":"Défaut (Gauche)","description":"Logo à gauche, liens et panier à droite."},{"id":"transparent","label":"Transparent","description":"Header superposé sur la bannière Hero."}],"hero":[{"id":"image","label":"Image de fond","description":"Un grand visuel avec un titre en superposition."},{"id":"gradient","label":"Dégradé de couleurs","description":"Un fond dynamique basé sur la palette du thème."},{"id":"minimal","label":"Minimaliste","description":"Un simple titre sur un fond uni."}],"productsByCategory":[{"id":"list","label":"Liste Verticale","description":"Toutes les catégories se suivent."},{"id":"carousel","label":"Le Switcher (Carrousel)","description":"Navigation horizontale entre catégories avec grid dynamique."}]},"settingsSchema":[{"type":"group","label":"Ordre des Sections (Layout)","fields":[{"id":"homePageSections","label":"Séquence de la Page","type":"repeater","itemFields":[{"id":"type","label":"Type de section","type":"select","options":[{"value":"hero","label":"1. Hero (Intro Impact)"},{"value":"painPoints","label":"2. Pain Points (Problématique)"},{"value":"featuredProduct","label":"3. Spotlight Product (Un seul)"},{"value":"featuredProducts","label":"4. Featured Products (Grille)"},{"value":"features","label":"5. Store Features (Atouts)"},{"value":"productsByCategory","label":"6. Category Switcher (Collections)"},{"value":"promoBanner","label":"7. Promo Banner (Offre Spéciale)"},{"value":"testimonials","label":"8. Testimonials (Preuve Sociale)"},{"value":"faq","label":"9. FAQ (Questions)"},{"value":"about","label":"10. Our Story (À Propos)"},{"value":"newsletterSignup","label":"11. Newsletter (Engagement)"}]}]}]},{"type":"group","label":"1. Hero (L'Impact)","fields":[{"id":"hero.style","label":"Style du Hero","type":"variant_selector","variantId":"hero","default":"image"},{"id":"hero.title","label":"Titre Principal","type":"text","default":"Votre Titre Principal"},{"id":"hero.subtitle","label":"Sous-titre / Accroche","type":"textarea","default":"Une brève description de votre activité ou de votre proposition de valeur."},{"id":"hero.imageUrl","label":"Image de fond","type":"image","default":""},{"id":"hero.ctaButtonText","label":"Texte du bouton","type":"text","default":"Explorer"},{"id":"hero.ctaButtonUrl","label":"Lien du bouton","type":"select","options":[{"value":"/","label":"Accueil"},{"value":"/catalog","label":"Catalogue"},{"value":"/cart","label":"Panier"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#featuredProduct","label":"Ancre: Produit Vedette"},{"value":"#productsByCategory","label":"Ancre: Catégories"},{"value":"#features","label":"Ancre: Avantages"},{"value":"#testimonials","label":"Ancre: Témoignages"},{"value":"#faq","label":"Ancre: FAQ"},{"value":"#about","label":"Ancre: Notre Histoire"}],"default":"#featuredProducts"}]},{"type":"group","label":"2. Pain Points (Le Problème)","fields":[{"id":"painPoints.title","label":"Titre","type":"text","default":"Problématique Client"},{"id":"painPoints.subtitle","label":"Sous-titre","type":"textarea","default":"Décrivez ici les défis majeurs rencontrés par vos clients."},{"id":"painPoints.items","label":"Problèmes","type":"repeater","default":[{"icon":"fas fa-ban","text":"Point de douleur 1"},{"icon":"fas fa-search","text":"Point de douleur 2"},{"icon":"fas fa-dollar-sign","text":"Point de douleur 3"}],"itemFields":[{"id":"icon","label":"Icône (FontAwesome)","type":"text"},{"id":"text","label":"Description","type":"textarea"}]}]},{"type":"group","label":"3. Spotlight Product (Seul)","fields":[{"id":"featuredProduct.title","label":"Titre Alternatif","type":"text"},{"id":"featuredProduct.productId","label":"Sélectionner le Produit Star","type":"product_selector"}]},{"type":"group","label":"4. Featured Products (Liste)","fields":[{"id":"featuredProducts.title","label":"Titre du Bloc","type":"text","default":"Collection Vedette"},{"id":"featuredProducts.subtitle","label":"Sous-titre / Introduction","type":"textarea"},{"id":"featuredProducts.productIds","label":"Sélection des Produits","type":"products_selector"}]},{"type":"group","label":"5. Store Features (Atouts)","fields":[{"id":"features.title","label":"Titre","type":"text","default":"Fonctionnalités Clés"},{"id":"features.subtitle","label":"Sous-titre","type":"textarea","default":"Mettez en avant les points forts de votre produit ou service."},{"id":"features.items","label":"Points forts","type":"repeater","itemFields":[{"id":"title","label":"Nom de l'atout","type":"text"},{"id":"description","label":"Détails","type":"textarea"},{"id":"image","label":"Image illustrative","type":"image"}],"default":[{"title":"Avantage 1","description":"Description détaillée de cet avantage concurrentiel.","image":""},{"title":"Avantage 2","description":"Description détaillée de ce second avantage.","image":""}]}]},{"type":"group","label":"6. Category Switcher","fields":[{"id":"productsByCategory.style","label":"Mode d'affichage","type":"variant_selector","variantId":"productsByCategory"},{"id":"productsByCategory.title","label":"Titre de section","type":"text"}]},{"type":"group","label":"7. Promotion & Offre","fields":[{"id":"promo.style","label":"Style d'affichage","type":"variant_selector","variantId":"promo","default":"standard"},{"id":"promo.title","label":"Titre","type":"text","default":"Offre Spéciale"},{"id":"promo.subtitle","label":"Sous-titre","type":"text","default":"Détails de votre offre promotionnelle à durée limitée."},{"id":"promo.endDate","label":"Date de fin (YYYY-MM-DD HH:MM)","type":"text","default":"2026-12-31 23:59"},{"id":"promo.buttonText","label":"Texte Bouton","type":"text","default":"Profiter"},{"id":"promo.buttonUrl","label":"Lien Promotion","type":"select","options":[{"value":"/catalog","label":"Catalogue"},{"value":"#featuredProducts","label":"Ancre: Produits Vedettes"},{"value":"#","label":"Haut de page"}],"default":"#featuredProducts"}]},{"type":"group","label":"8. Témoignages Clients","fields":[{"id":"testimonials.style","label":"Style d'affichage","type":"variant_selector","variantId":"testimonials","default":"carousel"},{"id":"testimonials.title","label":"Titre de la Section","type":"text","default":"Témoignages Clients"},{"id":"testimonials.items","label":"Avis Clients","type":"repeater","itemFields":[{"id":"name","label":"Nom de l'auteur","type":"text"},{"id":"quote","label":"Message","type":"textarea"}],"default":[{"name":"Client","quote":"Message de satisfaction client."}]}]},{"type":"group","label":"9. FAQ (Questions)","fields":[{"id":"faq.title","label":"Titre FAQ","type":"text","default":"Questions Fréquentes"},{"id":"faq.items","label":"Questions / Réponses","type":"repeater","itemFields":[{"id":"question","label":"La Question","type":"text"},{"id":"answer","label":"La Réponse","type":"textarea"}],"default":[{"question":"Question ?","answer":"Réponse."}]}]},{"type":"group","label":"10. Notre Histoire (À Propos)","fields":[{"id":"about.title","label":"Titre","type":"text","default":"Notre Histoire"},{"id":"about.content","label":"Texte principal","type":"textarea"},{"id":"about.engagements","label":"Engagements & Valeurs","type":"repeater","itemFields":[{"id":"title","label":"Titre","type":"text"},{"id":"description","label":"Description","type":"textarea"},{"id":"icon","label":"Icône","type":"text"}]}]},{"type":"group","label":"11. Newsletter (Capture)","fields":[{"id":"newsletterSignup.style","label":"Style d'affichage","type":"variant_selector","variantId":"newsletterSignup","default":"modern"},{"id":"newsletterSignup.title","label":"Titre d'Incitation","type":"text","default":"Rejoignez-nous"},{"id":"newsletterSignup.subtitle","label":"Argument de vente","type":"text"}]},{"type":"group","label":"Branding & Couleurs","fields":[{"id":"palette.background","label":"Couleur de Fond","type":"color"},{"id":"palette.text","label":"Couleur du Texte","type":"color"},{"id":"palette.textMuted","label":"Texte Secondaire","type":"color"},{"id":"palette.primary","label":"Couleur Primaire","type":"color"},{"id":"palette.secondary","label":"Couleur Secondaire","type":"color"},{"id":"palette.accent","label":"Couleur d'Accent","type":"color"},{"id":"palette.cardBackground","label":"Fond des Cartes","type":"color"},{"id":"palette.cardBorder","label":"Bordures des Cartes","type":"color"}]},{"type":"group","label":"Styles UI Globaux","fields":[{"id":"header.style","label":"Variante Header","type":"variant_selector","variantId":"header"},{"id":"productCard.style","label":"Variante Cartes Produit","type":"variant_selector","variantId":"productCard"}]}],"settings":{"homePageSections":[],"hero":{"style":"image","title":"Votre Titre Principal","subtitle":"Une brève description de votre activité ou de votre proposition de valeur.","imageUrl":"","ctaButtonText":"Explorer","ctaButtonUrl":"#featuredProducts"},"painPoints":{"title":"Problématique Client","subtitle":"Décrivez ici les défis majeurs rencontrés par vos clients."},"painPoints.items":[{"icon":"fas fa-ban","text":"Point de douleur 1"},{"icon":"fas fa-search","text":"Point de douleur 2"},{"icon":"fas fa-dollar-sign","text":"Point de douleur 3"}],"featuredProducts":{"title":"Collection Vedette"},"features":{"title":"Fonctionnalités Clés","subtitle":"Mettez en avant les points forts de votre produit ou service."},"features.items":[{"title":"Avantage 1","description":"Description détaillée de cet avantage concurrentiel.","image":""},{"title":"Avantage 2","description":"Description détaillée de ce second avantage.","image":""}],"promo":{"style":"standard","title":"Offre Spéciale","subtitle":"Détails de votre offre promotionnelle à durée limitée.","endDate":"2026-12-31 23:59","buttonText":"Profiter","buttonUrl":"#featuredProducts"},"testimonials":{"style":"carousel","title":"Témoignages Clients"},"testimonials.items":[{"name":"Client","quote":"Message de satisfaction client."}],"faq":{"title":"Questions Fréquentes"},"faq.items":[{"question":"Question ?","answer":"Réponse."}],"about":{"title":"Notre Histoire"},"about.engagements":[],"newsletterSignup":{"style":"modern","title":"Rejoignez-nous"},"computedPalette":{"background":"#0A0E1A","text":"#E0E6F0","primary":"#007AFF","secondary":"#5C6B73","accent":"#00D9FF","cardBackground":"#1C202E","textMuted":"#606470","cardBorder":"#343845","inputBackground":"#222738","chatResponseBackground":"#0d1221","primary600":"#0066d6","primary700":"#0058b8","secondary600":"#4e5b62"},"computedCssVars":"--bg-color: #0A0E1A;\n  --text-color: #E0E6F0;\n  --primary-color: #007AFF;\n  --secondary-color: #5C6B73;\n  --accent-color: #00D9FF;\n  --text-muted-color: #606470;\n  --card-bg-color: #1C202E;\n  --card-border-color: #343845;\n  --input-bg-color: #222738;\n  --chat-response-bg-color: #0d1221;\n  --primary-600: #0066d6;\n  --primary-700: #0058b8;\n  --secondary-600: #4e5b62;\n  --contrast-text-bg: 15.354725842427566;"},"baseTemplate":"crystal"},"apiEndpoints":{"stacy":"https://us-central1-zflex-wizard.cloudfunctions.net/askStacyApi","resumeConv":"https://us-central1-zflex-wizard.cloudfunctions.net/resumeConversationApi","createConv":"https://us-central1-zflex-wizard.cloudfunctions.net/createConversationApi","continueConv":"https://us-central1-zflex-wizard.cloudfunctions.net/continueConversationApi","createOrder":"https://us-central1-zflex-wizard.cloudfunctions.net/createOrderApi","subscribeToNewsletter":"https://us-central1-zflex-wizard.cloudfunctions.net/subscribeToNewsletterApi","submitReview":"https://us-central1-zflex-wizard.cloudfunctions.net/submitReviewApi","getOrderDetails":"https://us-central1-zflex-wizard.cloudfunctions.net/getOrderApi","trackEvent":"https://us-central1-zflex-wizard.cloudfunctions.net/tracker","initiatePayment":"https://us-central1-zflex-wizard.cloudfunctions.net/initiatePayment","getOrderStatusApi":"https://us-central1-zflex-wizard.cloudfunctions.net/getOrderStatusApi","getProspectInfo":"https://us-central1-zflex-wizard.cloudfunctions.net/getProspectInfo"}}
+  </script>
+
+    
+      <!-- =================================================================================================
+// PARTIEL : _hero.njk - Crystal Vandal Upgrade
+// Support des variantes 'image', 'gradient', 'minimal' avec data-bindings complets.
+// ================================================================================================= -->
+
+<div data-zflex-section="hero">
+  <div data-zflex-variant-container="hero">
+    
+    
+    
+    
+    
+    
+    <section class="relative min-h-[70vh] flex items-center py-20 overflow-hidden">
+      
+      <div 
+        class="absolute inset-0 bg-cover bg-center z-0" 
+        style="background-color: var(--primary-color); --hero-img: url('https://images.unsplash.com/photo-1762279389051-c4b29456fbc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjBsaWdodCUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDB8MHx8fDE3NzAxMzc2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080'); background-image: var(--hero-img);"
+        data-zflex-id="hero.imageUrl"
+        data-zflex-bind="imageUrl"
+        data-zflex-bg-hero
+      ></div>
+
+      
+      <div class="absolute inset-0 bg-black/40 z-0"></div>
+      
+      <div class="container mx-auto px-6 relative z-20 text-center text-white">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight" data-zflex-id="hero.title" data-zflex-bind="title">
+          Fearlessalan&#39;sBrain: Learning to think.
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 leading-relaxed" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">
+          Des solutions algorithmiques avancées pour résoudre vos problèmes complexes et stimuler votre croissance.
+        </p>
+        <a
+          href="#features"
+          class="zflex-link bg-white text-black px-10 py-4 rounded-full font-extrabold text-lg transition-all hover:shadow-2xl hover:-translate-y-1 inline-block"
+          data-analytics-type="click_hero_cta" data-analytics-payload="{&quot;title&quot;:&quot;Fearlessalan'sBrain: Learning to think.&quot;,&quot;cta_text&quot;:&quot;Découvrir Nos Solutions&quot;}"
+        >
+          <span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Découvrir Nos Solutions</span>
+        </a>
+      </div>
+    </section>
+    
+
+    
+    
+    
+    
+    
+  </div>
+
+  
+  <template data-zflex-variant="hero.image">
+    <section class="relative min-h-[70vh] flex items-center py-20 overflow-hidden">
+      
+      <div 
+        class="absolute inset-0 bg-cover bg-center z-0" 
+        style="background-color: var(--primary-color); --hero-img: url(''); background-image: var(--hero-img);" 
+        data-zflex-id="hero.imageUrl" 
+        data-zflex-bind="imageUrl"
+        data-zflex-bg-hero
+      ></div>
+      
+      <div class="absolute inset-0 bg-black/40 z-0"></div>
+
+      <div class="container mx-auto px-6 relative z-20 text-center text-white">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6" data-zflex-id="hero.title" data-zflex-bind="title">Titre Hero</h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Sous-titre...</p>
+        <div class="bg-white text-black px-10 py-4 rounded-full font-bold inline-block"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Bouton</span></div>
+      </div>
+    </section>
+  </template>
+
+  <template data-zflex-variant="hero.gradient">
+    <section class="relative min-h-[60vh] flex items-center py-20 text-center text-white" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color));">
+      <div class="container mx-auto px-6 relative z-10">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6" data-zflex-id="hero.title" data-zflex-bind="title">Titre Hero</h1>
+        <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Sous-titre...</p>
+        <div class="bg-white text-black px-10 py-4 rounded-full font-bold inline-block"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Bouton</span></div>
+      </div>
+    </section>
+  </template>
+
+  <template data-zflex-variant="hero.minimal">
+    <section class="py-24 text-center" style="background-color: var(--bg-color);">
+      <div class="container mx-auto px-6">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6" style="color: var(--text-color);" data-zflex-id="hero.title" data-zflex-bind="title">Titre Hero</h1>
+        <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-10" style="color: var(--text-muted-color);" data-zflex-id="hero.subtitle" data-zflex-bind="subtitle">Sous-titre...</p>
+        <div class="px-10 py-4 rounded-full font-bold transition-all inline-block" style="background-color: var(--primary-color); color: white;"><span data-zflex-id="hero.ctaButtonText" data-zflex-bind="ctaButtonText">Bouton</span></div>
+      </div>
+    </section>
+  </template>
+</div>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _pain-points.njk - Crystal Vandal Upgrade
+// Section d'identification du problème pour le storytelling.
+// ================================================================================================= -->
+
+<section
+  data-zflex-section="painPoints"
+  class="py-16 md:py-24"
+  style="background-color: var(--bg-color)"
+>
+  
+
+  <div class="container mx-auto px-6">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <h2
+        class="text-3xl md:text-5xl font-bold mb-6"
+        style="color: var(--text-color)"
+        data-zflex-id="painPoints.title"
+        data-zflex-bind="title"
+      >
+        Vos Défis, Nos Solutions Intelligentes
+      </h2>
+      <p
+        class="text-lg md:text-xl"
+        style="color: var(--text-muted-color)"
+        data-zflex-id="painPoints.subtitle"
+        data-zflex-bind="subtitle"
+      >
+        Nous transformons les obstacles techniques et opérationnels en opportunités stratégiques.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12" data-zflex-repeater="painPoints.items">
+      
+      <div
+        class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg"
+        style="
+          background-color: var(--card-bg-color);
+          border: 1px solid var(--card-border-color);
+        "
+      >
+        <div
+          class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"
+        >
+          <i
+            class="fas fa-brain text-2xl"
+            data-zflex-id="painPoints.items.0.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <div>
+          <p
+            class="text-lg font-medium"
+            style="color: var(--text-color)"
+            data-zflex-id="painPoints.items.0.text"
+            data-zflex-bind="text"
+          >
+            Difficulté à extraire des insights pertinents de vos données massives ?
+          </p>
+        </div>
+      </div>
+      
+      <div
+        class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg"
+        style="
+          background-color: var(--card-bg-color);
+          border: 1px solid var(--card-border-color);
+        "
+      >
+        <div
+          class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"
+        >
+          <i
+            class="fas fa-cogs text-2xl"
+            data-zflex-id="painPoints.items.1.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <div>
+          <p
+            class="text-lg font-medium"
+            style="color: var(--text-color)"
+            data-zflex-id="painPoints.items.1.text"
+            data-zflex-bind="text"
+          >
+            Processus opérationnels lents et inefficaces, freinant votre productivité ?
+          </p>
+        </div>
+      </div>
+      
+      <div
+        class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg"
+        style="
+          background-color: var(--card-bg-color);
+          border: 1px solid var(--card-border-color);
+        "
+      >
+        <div
+          class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"
+        >
+          <i
+            class="fas fa-chart-line text-2xl"
+            data-zflex-id="painPoints.items.2.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <div>
+          <p
+            class="text-lg font-medium"
+            style="color: var(--text-color)"
+            data-zflex-id="painPoints.items.2.text"
+            data-zflex-bind="text"
+          >
+            Manque de visibilité sur les tendances futures et les opportunités de marché ?
+          </p>
+        </div>
+      </div>
+      
+      <div
+        class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg"
+        style="
+          background-color: var(--card-bg-color);
+          border: 1px solid var(--card-border-color);
+        "
+      >
+        <div
+          class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500"
+        >
+          <i
+            class="fas fa-shield-alt text-2xl"
+            data-zflex-id="painPoints.items.3.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <div>
+          <p
+            class="text-lg font-medium"
+            style="color: var(--text-color)"
+            data-zflex-id="painPoints.items.3.text"
+            data-zflex-bind="text"
+          >
+            Prise de décision complexe sans outils d&#39;aide fiables et prédictifs ?
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <template data-zflex-template="painPoints.items">
+    <div class="flex items-start space-x-4 p-6 rounded-xl transition hover:shadow-lg" style="background-color: var(--card-bg-color); border: 1px solid var(--card-border-color);">
+      <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-red-100/10 text-red-500">
+        <i class="text-2xl" data-zflex-bind="icon"></i>
+      </div>
+      <div>
+        <p class="text-lg font-medium" style="color: var(--text-color)" data-zflex-bind="text">Point de douleur...</p>
+      </div>
+    </div>
+  </template>
+</section>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _features.njk - Crystal Vandal Upgrade
+// Section modulaire pour mettre en avant les bénéfices et fonctionnalités.
+// ================================================================================================= -->
+
+<section
+  data-zflex-section="features"
+  class="py-16 md:py-24"
+  style="background-color: var(--bg-color)"
+>
+  
+
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2
+        class="text-3xl md:text-5xl font-bold mb-4"
+        style="color: var(--text-color)"
+        data-zflex-id="features.title"
+        data-zflex-bind="title"
+      >
+        Nos Solutions Algorithmiques : L&#39;Intelligence au Service de Votre Croissance
+      </h2>
+      <p
+        class="text-lg md:text-xl max-w-2xl mx-auto"
+        style="color: var(--text-muted-color)"
+        data-zflex-id="features.subtitle"
+        data-zflex-bind="subtitle"
+      >
+        Transformez vos défis en avantages compétitifs durables.
+      </p>
+    </div>
+
+    <div class="space-y-20 md:space-y-32" data-zflex-repeater="features.items">
+      
+      <div
+        class="flex flex-col md:flex-row items-center gap-12"
+      >
+        
+        <div class="w-full md:w-1/2">
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1762279389051-c4b29456fbc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwxfHxnZW9tZXRyaWMlMjBsaWdodCUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDB8MHx8fDE3NzAxMzc2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Optimisation des Processus"
+              class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+              data-zflex-id="features.items.0.image"
+              data-zflex-bind="image"
+            />
+          </div>
+        </div>
+
+        
+        <div class="w-full md:w-1/2">
+          <div
+            class="max-w-lg "
+          >
+            <h3
+              class="text-2xl md:text-4xl font-bold mb-6"
+              style="color: var(--text-color)"
+              data-zflex-id="features.items.0.title"
+              data-zflex-bind="title"
+            >
+              Optimisation des Processus
+            </h3>
+            <p
+              class="text-lg leading-relaxed mb-8"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="features.items.0.description"
+              data-zflex-bind="description"
+            >
+              Réduisez les coûts et augmentez l&#39;efficacité grâce à des algorithmes qui rationalisent vos opérations.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        class="flex flex-col md:flex-row-reverse items-center gap-12"
+      >
+        
+        <div class="w-full md:w-1/2">
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1762279388952-85187155e48d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxnZW9tZXRyaWMlMjBsaWdodCUyMGRhdGElMjB2aXN1YWxpemF0aW9ufGVufDB8MHx8fDE3NzAxMzc2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Analyse Prédictive Avancée"
+              class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+              data-zflex-id="features.items.1.image"
+              data-zflex-bind="image"
+            />
+          </div>
+        </div>
+
+        
+        <div class="w-full md:w-1/2">
+          <div
+            class="max-w-lg md:ml-auto"
+          >
+            <h3
+              class="text-2xl md:text-4xl font-bold mb-6"
+              style="color: var(--text-color)"
+              data-zflex-id="features.items.1.title"
+              data-zflex-bind="title"
+            >
+              Analyse Prédictive Avancée
+            </h3>
+            <p
+              class="text-lg leading-relaxed mb-8"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="features.items.1.description"
+              data-zflex-bind="description"
+            >
+              Anticipez les tendances du marché et les comportements clients pour une planification stratégique proactive.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        class="flex flex-col md:flex-row items-center gap-12"
+      >
+        
+        <div class="w-full md:w-1/2">
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1603847734787-9e8a3f3e9d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwyfHxmdXR1cmlzdGljJTIwY3J5c3RhbCUyMG5ldHdvcmslMjBhYnN0cmFjdHxlbnwwfDB8fHwxNzcwMTM3NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Automatisation Intelligente"
+              class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+              data-zflex-id="features.items.2.image"
+              data-zflex-bind="image"
+            />
+          </div>
+        </div>
+
+        
+        <div class="w-full md:w-1/2">
+          <div
+            class="max-w-lg "
+          >
+            <h3
+              class="text-2xl md:text-4xl font-bold mb-6"
+              style="color: var(--text-color)"
+              data-zflex-id="features.items.2.title"
+              data-zflex-bind="title"
+            >
+              Automatisation Intelligente
+            </h3>
+            <p
+              class="text-lg leading-relaxed mb-8"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="features.items.2.description"
+              data-zflex-bind="description"
+            >
+              Libérez vos équipes des tâches répétitives grâce à des solutions logicielles autonomes et performantes.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        class="flex flex-col md:flex-row-reverse items-center gap-12"
+      >
+        
+        <div class="w-full md:w-1/2">
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1732082052116-f79e1bfbc0cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NTczMjl8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwY3J5c3RhbCUyMG5ldHdvcmslMjBhYnN0cmFjdHxlbnwwfDB8fHwxNzcwMTM3NjE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Personnalisation à Grande Échelle"
+              class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]"
+              data-zflex-id="features.items.3.image"
+              data-zflex-bind="image"
+            />
+          </div>
+        </div>
+
+        
+        <div class="w-full md:w-1/2">
+          <div
+            class="max-w-lg md:ml-auto"
+          >
+            <h3
+              class="text-2xl md:text-4xl font-bold mb-6"
+              style="color: var(--text-color)"
+              data-zflex-id="features.items.3.title"
+              data-zflex-bind="title"
+            >
+              Personnalisation à Grande Échelle
+            </h3>
+            <p
+              class="text-lg leading-relaxed mb-8"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="features.items.3.description"
+              data-zflex-bind="description"
+            >
+              Offrez des expériences uniques à vos clients grâce à des algorithmes qui s&#39;adaptent à leurs besoins individuels.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <template data-zflex-template="features.items">
+    <div class="flex flex-col md:flex-row items-center gap-12 feature-blueprint">
+      <div class="w-full md:w-1/2">
+        <div class="relative group">
+          <img src="" alt="Feature" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]" data-zflex-bind="image" />
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="max-w-lg">
+          <h3 class="text-2xl md:text-4xl font-bold mb-6" style="color: var(--text-color)" data-zflex-bind="title">Titre</h3>
+          <p class="text-lg leading-relaxed mb-8" style="color: var(--text-muted-color)" data-zflex-bind="description">Description...</p>
+        </div>
+      </div>
+    </div>
+  </template>
+</section>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _testimonials.njk - Crystal Vandal Upgrade
+// Section témoignages avec variantes (carousel, grid).
+// FIX: Full reactivity for colors and nested repeaters.
+// ================================================================================================= -->
+
+<section
+  data-zflex-section="testimonials"
+  class="py-16 md:py-24"
+  style="background-color: var(--bg-color)"
+>
+  <div data-zflex-variant-container="testimonials">
+     
+    
+
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-5xl font-bold mb-12 text-center"
+        style="color: var(--text-color)"
+        data-zflex-id="testimonials.title"
+        data-zflex-bind="title"
+      >
+        Ce Que Nos Partenaires Disent de Nous
+      </h2>
+
+       
+      <div
+        class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide"
+        data-zflex-repeater="testimonials.items"
+      >
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.0"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.0.quote"
+            data-zflex-bind="quote"
+          >
+            "Fearlessalan&#39;sBrain a révolutionné notre approche de l&#39;analyse de données. Leurs algorithmes nous ont permis de découvrir des corrélations inattendues, ouvrant la voie à de nouvelles stratégies de marché. Un véritable partenaire d&#39;innovation !"
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.0.name"
+              data-zflex-bind="name"
+            >
+              Dr. Élodie Dubois, CEO de TechInnov
+            </p>
+          </div>
+        </div>
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.1"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.1.quote"
+            data-zflex-bind="quote"
+          >
+            "L&#39;implémentation de leurs solutions logicielles a optimisé nos chaînes d&#39;approvisionnement de manière spectaculaire. Nous avons réduit nos coûts de 15% et amélioré notre réactivité. Leur expertise est inégalée."
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.1.name"
+              data-zflex-bind="name"
+            >
+              Marc Lefevre, Directeur Opérationnel chez OptiLogix
+            </p>
+          </div>
+        </div>
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.2"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.2.quote"
+            data-zflex-bind="quote"
+          >
+            "Leur capacité à &#39;faire penser&#39; nos systèmes est bluffante. Nous avons pu accélérer nos cycles de recherche et développement grâce à des outils prédictifs sur mesure. Une équipe brillante et avant-gardiste."
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.2.name"
+              data-zflex-bind="name"
+            >
+              Sophie Chen, Responsable R&amp;D chez BioGenius
+            </p>
+          </div>
+        </div>
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.3"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.3.quote"
+            data-zflex-bind="quote"
+          >
+            "En tant que startup, nous avions besoin de solutions agiles et puissantes. Fearlessalan&#39;sBrain a su nous fournir des algorithmes qui ont propulsé notre croissance et solidifié notre positionnement sur le marché."
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.3.name"
+              data-zflex-bind="name"
+            >
+              Antoine Girard, Fondateur de StartUpX
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <template data-zflex-variant="testimonials.grid">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-zflex-repeater="testimonials.items"></div>
+    </div>
+  </template>
+
+  <template data-zflex-variant="testimonials.carousel">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2>
+      <div class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide" data-zflex-repeater="testimonials.items"></div>
+    </div>
+  </template>
+
+  <template data-zflex-template="testimonials.items">
+    <div class="p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;">
+      <div class="flex text-yellow-500 mb-4 divider-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-bind="quote">"Une expérience incroyable..."</p>
+      <p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-bind="name">Nom Client</p>
+    </div>
+  </template>
+</section>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _about.njk - Crystal Vandal Upgrade
+// Section d'histoire et d'engagements.
+// ================================================================================================= -->
+
+
+
+<section
+  id="about"
+  data-zflex-section="about"
+  class="py-16 md:py-24"
+  style="
+    background-color: var(--card-bg-color);
+    border-bottom: 1px solid var(--card-border-color);
+  "
+>
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2
+        class="text-3xl md:text-5xl font-bold mb-8"
+        style="color: var(--text-color)"
+        data-zflex-id="about.title"
+        data-zflex-bind="title"
+      >
+        Notre Mission : Éveiller le Potentiel de Votre Entreprise
+      </h2>
+      <div
+        class="prose prose-lg max-w-none mx-auto text-lg md:text-xl leading-relaxed"
+        style="color: var(--text-muted-color)"
+        data-zflex-id="about.content"
+        data-zflex-bind="content"
+      >
+        Chez Fearlessalan'sBrain, nous croyons que chaque entreprise peut 'apprendre à penser' de manière plus efficace. Nous sommes une équipe d'experts en algorithmes et en stratégies logicielles, dédiés à transformer les défis complexes en avantages compétitifs. Notre approche est fondée sur la clarté, l'efficacité et une vision avant-gardiste, garantissant des solutions sur mesure qui optimisent vos processus, améliorent votre prise de décision et stimulent une croissance durable.
+      </div>
+    </div>
+
+    
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20"
+      data-zflex-repeater="about.engagements"
+    >
+      
+      <div
+        class="text-center group"
+        data-zflex-id="about.engagements.0"
+      >
+        <div
+          class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg"
+          style="background-color: var(--primary-color); color: white"
+        >
+          <i
+            class="fas fas fa-lightbulb text-2xl"
+            data-zflex-id="about.engagements.0.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <h3
+          class="font-bold text-xl mb-3"
+          style="color: var(--text-color)"
+          data-zflex-id="about.engagements.0.title"
+          data-zflex-bind="title"
+        >
+          Innovation Continue
+        </h3>
+        <p
+          class="text-lg opacity-80"
+          style="color: var(--text-muted-color)"
+          data-zflex-id="about.engagements.0.description"
+          data-zflex-bind="description"
+        >
+          Nous sommes à la pointe de la recherche et du développement algorithmique pour vous offrir les solutions les plus avancées.
+        </p>
+      </div>
+      
+      <div
+        class="text-center group"
+        data-zflex-id="about.engagements.1"
+      >
+        <div
+          class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg"
+          style="background-color: var(--primary-color); color: white"
+        >
+          <i
+            class="fas fas fa-eye text-2xl"
+            data-zflex-id="about.engagements.1.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <h3
+          class="font-bold text-xl mb-3"
+          style="color: var(--text-color)"
+          data-zflex-id="about.engagements.1.title"
+          data-zflex-bind="title"
+        >
+          Clarté et Transparence
+        </h3>
+        <p
+          class="text-lg opacity-80"
+          style="color: var(--text-muted-color)"
+          data-zflex-id="about.engagements.1.description"
+          data-zflex-bind="description"
+        >
+          Nos stratégies sont conçues pour être compréhensibles et leurs impacts mesurables, sans jargon inutile.
+        </p>
+      </div>
+      
+      <div
+        class="text-center group"
+        data-zflex-id="about.engagements.2"
+      >
+        <div
+          class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg"
+          style="background-color: var(--primary-color); color: white"
+        >
+          <i
+            class="fas fas fa-rocket text-2xl"
+            data-zflex-id="about.engagements.2.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <h3
+          class="font-bold text-xl mb-3"
+          style="color: var(--text-color)"
+          data-zflex-id="about.engagements.2.title"
+          data-zflex-bind="title"
+        >
+          Efficacité Optimale
+        </h3>
+        <p
+          class="text-lg opacity-80"
+          style="color: var(--text-muted-color)"
+          data-zflex-id="about.engagements.2.description"
+          data-zflex-bind="description"
+        >
+          Chaque solution est pensée pour maximiser la performance et minimiser les ressources, pour un ROI maximal.
+        </p>
+      </div>
+      
+      <div
+        class="text-center group"
+        data-zflex-id="about.engagements.3"
+      >
+        <div
+          class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 transition-transform group-hover:scale-110 group-hover:rotate-3 shadow-lg"
+          style="background-color: var(--primary-color); color: white"
+        >
+          <i
+            class="fas fas fa-handshake text-2xl"
+            data-zflex-id="about.engagements.3.icon"
+            data-zflex-bind="icon"
+          ></i>
+        </div>
+        <h3
+          class="font-bold text-xl mb-3"
+          style="color: var(--text-color)"
+          data-zflex-id="about.engagements.3.title"
+          data-zflex-bind="title"
+        >
+          Partenariat Stratégique
+        </h3>
+        <p
+          class="text-lg opacity-80"
+          style="color: var(--text-muted-color)"
+          data-zflex-id="about.engagements.3.description"
+          data-zflex-bind="description"
+        >
+          Nous travaillons main dans la main avec vous pour comprendre vos besoins uniques et co-créer votre succès.
+        </p>
+      </div>
+      
+    </div>
+
+    
+    <template data-zflex-template="about.engagements">
+      <div class="text-center group">
+        <div
+          class="flex items-center justify-center h-16 w-16 rounded-2xl mx-auto mb-6 shadow-lg"
+          style="background-color: var(--primary-color); color: white"
+        >
+          <i class="fas fa-star text-2xl" data-zflex-bind="icon"></i>
+        </div>
+        <h3 class="font-bold text-xl mb-3" data-zflex-bind="title">
+          Engagement
+        </h3>
+        <p class="text-lg opacity-80" data-zflex-bind="description">
+          Description de l'engagement...
+        </p>
+      </div>
+    </template>
+    
+  </div>
+</section>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _faq.njk - Crystal Vandal Upgrade
+// Section FAQ moderne avec accordéons.
+// ================================================================================================= -->
+
+<section
+  data-zflex-section="faq"
+  class="py-16 md:py-24"
+  style="background-color: var(--bg-color)"
+>
+  
+
+  <div class="container mx-auto px-6">
+    <div class="max-w-3xl mx-auto">
+      <h2
+        class="text-3xl md:text-4xl font-bold mb-12 text-center"
+        style="color: var(--text-color)"
+        data-zflex-id="faq.title"
+        data-zflex-bind="title"
+      >
+        Questions Fréquentes sur l&#39;Intelligence Algorithmique
+      </h2>
+
+      
+      <script type="application/ld+json">
+        {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
@@ -45,11 +949,223 @@
             }
             
           ]
-        }</script><div class="space-y-4" data-zflex-repeater="faq.items"><details class="faq-item border rounded-xl transition-all duration-300 group" name="faq-accordion" style="border-color: var(--card-border-color);
-            background-color: var(--card-bg-color);"><summary class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"><span class="text-lg font-semibold" style="color: var(--text-color)" data-zflex-id="faq.items.0.question" data-zflex-bind="question">Qu&#39;est-ce que &#39;Learning to think&#39; signifie pour mon entreprise ? </span><svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><div class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"><div class="px-6 pb-6 text-lg" style="color: var(--text-muted-color)" data-zflex-id="faq.items.0.answer" data-zflex-bind="answer">Cela signifie équiper votre entreprise avec des algorithmes et des stratégies logicielles qui lui permettent d&#39;analyser des données, de prendre des décisions éclairées et d&#39;optimiser ses opérations de manière autonome, comme un cerveau qui apprend et s&#39;adapte.</div></div></details><details class="faq-item border rounded-xl transition-all duration-300 group" name="faq-accordion" style="border-color: var(--card-border-color);
-            background-color: var(--card-bg-color);"><summary class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"><span class="text-lg font-semibold" style="color: var(--text-color)" data-zflex-id="faq.items.1.question" data-zflex-bind="question">Comment Fearlessalan&#39;sBrain peut-il améliorer ma prise de décision ? </span><svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><div class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"><div class="px-6 pb-6 text-lg" style="color: var(--text-muted-color)" data-zflex-id="faq.items.1.answer" data-zflex-bind="answer">Nous développons des modèles prédictifs et des systèmes d&#39;aide à la décision basés sur l&#39;IA qui transforment vos données brutes en insights actionnables, vous permettant de faire des choix stratégiques avec une confiance accrue.</div></div></details><details class="faq-item border rounded-xl transition-all duration-300 group" name="faq-accordion" style="border-color: var(--card-border-color);
-            background-color: var(--card-bg-color);"><summary class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"><span class="text-lg font-semibold" style="color: var(--text-color)" data-zflex-id="faq.items.2.question" data-zflex-bind="question">Nos données sont-elles sécurisées avec vos solutions ? </span><svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><div class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"><div class="px-6 pb-6 text-lg" style="color: var(--text-muted-color)" data-zflex-id="faq.items.2.answer" data-zflex-bind="answer">Absolument. La sécurité et la confidentialité de vos données sont notre priorité absolue. Nous implémentons des protocoles de sécurité robustes et respectons les normes les plus strictes en matière de protection des données.</div></div></details><details class="faq-item border rounded-xl transition-all duration-300 group" name="faq-accordion" style="border-color: var(--card-border-color);
-            background-color: var(--card-bg-color);"><summary class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"><span class="text-lg font-semibold" style="color: var(--text-color)" data-zflex-id="faq.items.3.question" data-zflex-bind="question">Quel est le processus pour commencer un projet avec Fearlessalan&#39;sBrain ? </span><svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary><div class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"><div class="px-6 pb-6 text-lg" style="color: var(--text-muted-color)" data-zflex-id="faq.items.3.answer" data-zflex-bind="answer">Le processus débute par une consultation initiale pour comprendre vos défis. Ensuite, nous élaborons une proposition personnalisée, suivie par la phase de conception, de développement, d&#39;implémentation et de support continu. Chaque étape est collaborative et transparente.</div></div></details></div></div></div><template data-zflex-template="faq.items"><div class="faq-item border rounded-xl transition-all duration-300 group" style="border-color: var(--card-border-color); background-color: var(--card-bg-color);"><div class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"><span class="text-lg font-semibold" style="color: var(--text-color)" data-zflex-bind="question">Question...</span> <svg class="h-6 w-6 transform transition-transform duration-300 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div><div class="faq-content-wrapper overflow-hidden transition-all duration-300"><div class="px-6 pb-6 text-lg" style="color: var(--text-muted-color)" data-zflex-bind="answer">Réponse...</div></div></div></template></section><style>/* Masquer le triangle par défaut de summary */
+        }
+      </script>
+
+      <div class="space-y-4" data-zflex-repeater="faq.items">
+        
+        <details
+          class="faq-item border rounded-xl transition-all duration-300 group"
+          name="faq-accordion"
+          style="
+            border-color: var(--card-border-color);
+            background-color: var(--card-bg-color);
+          "
+        >
+          <summary
+            class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"
+          >
+            <span
+              class="text-lg font-semibold"
+              style="color: var(--text-color)"
+              data-zflex-id="faq.items.0.question"
+              data-zflex-bind="question"
+            >
+              Qu&#39;est-ce que &#39;Learning to think&#39; signifie pour mon entreprise ?
+            </span>
+            <svg
+              class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <div
+            class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"
+          >
+            <div
+              class="px-6 pb-6 text-lg"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="faq.items.0.answer"
+              data-zflex-bind="answer"
+            >
+              Cela signifie équiper votre entreprise avec des algorithmes et des stratégies logicielles qui lui permettent d&#39;analyser des données, de prendre des décisions éclairées et d&#39;optimiser ses opérations de manière autonome, comme un cerveau qui apprend et s&#39;adapte.
+            </div>
+          </div>
+        </details>
+        
+        <details
+          class="faq-item border rounded-xl transition-all duration-300 group"
+          name="faq-accordion"
+          style="
+            border-color: var(--card-border-color);
+            background-color: var(--card-bg-color);
+          "
+        >
+          <summary
+            class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"
+          >
+            <span
+              class="text-lg font-semibold"
+              style="color: var(--text-color)"
+              data-zflex-id="faq.items.1.question"
+              data-zflex-bind="question"
+            >
+              Comment Fearlessalan&#39;sBrain peut-il améliorer ma prise de décision ?
+            </span>
+            <svg
+              class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <div
+            class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"
+          >
+            <div
+              class="px-6 pb-6 text-lg"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="faq.items.1.answer"
+              data-zflex-bind="answer"
+            >
+              Nous développons des modèles prédictifs et des systèmes d&#39;aide à la décision basés sur l&#39;IA qui transforment vos données brutes en insights actionnables, vous permettant de faire des choix stratégiques avec une confiance accrue.
+            </div>
+          </div>
+        </details>
+        
+        <details
+          class="faq-item border rounded-xl transition-all duration-300 group"
+          name="faq-accordion"
+          style="
+            border-color: var(--card-border-color);
+            background-color: var(--card-bg-color);
+          "
+        >
+          <summary
+            class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"
+          >
+            <span
+              class="text-lg font-semibold"
+              style="color: var(--text-color)"
+              data-zflex-id="faq.items.2.question"
+              data-zflex-bind="question"
+            >
+              Nos données sont-elles sécurisées avec vos solutions ?
+            </span>
+            <svg
+              class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <div
+            class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"
+          >
+            <div
+              class="px-6 pb-6 text-lg"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="faq.items.2.answer"
+              data-zflex-bind="answer"
+            >
+              Absolument. La sécurité et la confidentialité de vos données sont notre priorité absolue. Nous implémentons des protocoles de sécurité robustes et respectons les normes les plus strictes en matière de protection des données.
+            </div>
+          </div>
+        </details>
+        
+        <details
+          class="faq-item border rounded-xl transition-all duration-300 group"
+          name="faq-accordion"
+          style="
+            border-color: var(--card-border-color);
+            background-color: var(--card-bg-color);
+          "
+        >
+          <summary
+            class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none"
+          >
+            <span
+              class="text-lg font-semibold"
+              style="color: var(--text-color)"
+              data-zflex-id="faq.items.3.question"
+              data-zflex-bind="question"
+            >
+              Quel est le processus pour commencer un projet avec Fearlessalan&#39;sBrain ?
+            </span>
+            <svg
+              class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 group-hover:text-primary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <div
+            class="faq-content-wrapper p-0 overflow-hidden transition-all duration-300"
+          >
+            <div
+              class="px-6 pb-6 text-lg"
+              style="color: var(--text-muted-color)"
+              data-zflex-id="faq.items.3.answer"
+              data-zflex-bind="answer"
+            >
+              Le processus débute par une consultation initiale pour comprendre vos défis. Ensuite, nous élaborons une proposition personnalisée, suivie par la phase de conception, de développement, d&#39;implémentation et de support continu. Chaque étape est collaborative et transparente.
+            </div>
+          </div>
+        </details>
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <template data-zflex-template="faq.items">
+    <div class="faq-item border rounded-xl transition-all duration-300 group" style="border-color: var(--card-border-color); background-color: var(--card-bg-color);">
+      <div class="w-full flex justify-between items-center p-6 text-left cursor-pointer list-none outline-none">
+        <span class="text-lg font-semibold" style="color: var(--text-color)" data-zflex-bind="question">Question...</span>
+        <svg class="h-6 w-6 transform transition-transform duration-300 group-hover:text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+      <div class="faq-content-wrapper overflow-hidden transition-all duration-300">
+        <div class="px-6 pb-6 text-lg" style="color: var(--text-muted-color)" data-zflex-bind="answer">
+          Réponse...
+        </div>
+      </div>
+    </div>
+  </template>
+</section>
+
+<style>
+  /* Masquer le triangle par défaut de summary */
   .faq-item summary::-webkit-details-marker {
     display: none;
   }
@@ -72,7 +1188,11 @@
   .faq-item[open] {
     border-color: var(--primary-color) !important;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }</style><script>// Fallback pour les navigateurs qui ne supportent pas encore l'attribut 'name' sur <details>
+  }
+</style>
+
+<script>
+  // Fallback pour les navigateurs qui ne supportent pas encore l'attribut 'name' sur <details>
   // Et pour forcer la fermeture propre des autres items.
   document.querySelectorAll(".faq-item").forEach((el) => {
     el.addEventListener("toggle", (e) => {
@@ -84,4 +1204,77 @@
         });
       }
     });
-  });</script><section data-zflex-section="newsletterSignup" class="py-16 md:py-24" style="background-color: var(--primary-color, #333);"><div data-zflex-variant-container="newsletterSignup"><div class="container mx-auto px-6 text-center text-white"><h2 class="text-3xl md:text-5xl font-bold mb-6" data-zflex-id="newsletterSignup.title" data-zflex-bind="title">Restez Connecté à l&#39;Avenir de l&#39;IA</h2><p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-id="newsletterSignup.subtitle" data-zflex-bind="subtitle">Recevez nos insights exclusifs sur l&#39;innovation algorithmique et les stratégies logicielles.</p><div class="max-w-md mx-auto"><form id="newsletter-form" class="flex flex-row items-center p-1 bg-white rounded-full shadow-2xl w-full overflow-hidden text-left"><input type="email" name="email" required placeholder="Votre email" class="min-w-0 flex-grow px-4 md:px-6 py-3 bg-transparent focus:outline-none text-gray-900 text-base md:text-lg rounded-full"> <button type="submit" class="flex-shrink-0 bg-black text-white font-bold py-2.5 md:py-3 px-6 md:px-8 rounded-full hover:bg-black/80 transition-all active:scale-95 whitespace-nowrap text-sm md:text-base" data-analytics-type="submit_newsletter" data-analytics-payload="{}">S'abonner</button></form></div></div></div><template data-zflex-variant="newsletterSignup.modern"><div class="container mx-auto px-6 text-center text-white"><h2 class="text-3xl md:text-5xl font-bold mb-6" data-zflex-bind="title">Titre Newsletter</h2><p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-bind="subtitle">Sous-titre...</p><div class="max-w-md mx-auto"><div class="flex flex-row items-center p-1 bg-white rounded-full shadow-2xl w-full overflow-hidden"><div class="min-w-0 flex-grow px-6 py-3 text-gray-900 text-lg">Email...</div><div class="flex-shrink-0 bg-black text-white font-bold py-3 px-8 rounded-full">S'abonner</div></div></div></div></template><template data-zflex-variant="newsletterSignup.minimal"><div class="container mx-auto px-6 text-center text-white"><h2 class="text-3xl md:text-5xl font-bold mb-6" data-zflex-bind="title">Titre Newsletter</h2><p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-bind="subtitle">Sous-titre...</p><div class="max-w-md mx-auto space-y-4"><div class="w-full px-6 py-4 bg-white/10 border border-white/20 text-white rounded-xl">Email...</div><div class="w-full bg-white text-black font-bold py-4 px-8 rounded-xl">Rejoindre</div></div></div></template></section></main>
+  });
+</script>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _newsletter-signup.njk - Crystal Vandal Upgrade
+// Section d'inscription avec variantes 'modern' (capsule) et 'minimal'.
+// FIX: Consistent namespacing for real-time synchronization.
+// ================================================================================================= -->
+
+
+
+
+<section data-zflex-section="newsletterSignup" class="py-16 md:py-24" style="background-color: var(--primary-color, #333);">
+  <div data-zflex-variant-container="newsletterSignup">
+    <div class="container mx-auto px-6 text-center text-white">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6" data-zflex-id="newsletterSignup.title" data-zflex-bind="title">
+        Restez Connecté à l&#39;Avenir de l&#39;IA
+      </h2>
+      <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-id="newsletterSignup.subtitle" data-zflex-bind="subtitle">
+        Recevez nos insights exclusifs sur l&#39;innovation algorithmique et les stratégies logicielles.
+      </p>
+      
+      
+      
+      <div class="max-w-md mx-auto">
+        <form id="newsletter-form" class="flex flex-row items-center p-1 bg-white rounded-full shadow-2xl w-full overflow-hidden text-left">
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            placeholder="Votre email" 
+            class="min-w-0 flex-grow px-4 md:px-6 py-3 bg-transparent focus:outline-none text-gray-900 text-base md:text-lg rounded-full"
+          >
+          <button 
+            type="submit" 
+            class="flex-shrink-0 bg-black text-white font-bold py-2.5 md:py-3 px-6 md:px-8 rounded-full hover:bg-black/80 transition-all active:scale-95 whitespace-nowrap text-sm md:text-base" 
+            data-analytics-type="submit_newsletter" data-analytics-payload="{}"
+          >
+            S'abonner
+          </button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <template data-zflex-variant="newsletterSignup.modern">
+    <div class="container mx-auto px-6 text-center text-white">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6" data-zflex-bind="title">Titre Newsletter</h2>
+      <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-bind="subtitle">Sous-titre...</p>
+      <div class="max-w-md mx-auto">
+        <div class="flex flex-row items-center p-1 bg-white rounded-full shadow-2xl w-full overflow-hidden">
+          <div class="min-w-0 flex-grow px-6 py-3 text-gray-900 text-lg">Email...</div>
+          <div class="flex-shrink-0 bg-black text-white font-bold py-3 px-8 rounded-full">S'abonner</div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template data-zflex-variant="newsletterSignup.minimal">
+    <div class="container mx-auto px-6 text-center text-white">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6" data-zflex-bind="title">Titre Newsletter</h2>
+      <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto opacity-90" data-zflex-bind="subtitle">Sous-titre...</p>
+      <div class="max-w-md mx-auto space-y-4">
+        <div class="w-full px-6 py-4 bg-white/10 border border-white/20 text-white rounded-xl">Email...</div>
+        <div class="w-full bg-white text-black font-bold py-4 px-8 rounded-xl">Rejoindre</div>
+      </div>
+    </div>
+  </template>
+</section> 
+  
+</main>
