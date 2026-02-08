@@ -58,8 +58,8 @@
       --card-bg-color: #1C202E;
 
       /* derived / advanced (fall back to computedPalette if available, else sensible default) */
-      --text-muted-color: #9CA3AF;
-      --card-border-color: #E5E7EB;
+      --text-muted-color: #000000;
+      --card-border-color: #000000;
       --input-bg-color: #F3F4F6;
       --chat-response-bg-color: #F9FAFB;
 
@@ -729,191 +729,63 @@ bg-transparent text-white"
   
   
       <!-- =================================================================================================
-// PARTIEL : _testimonials.njk - Crystal Vandal Upgrade
-// Section témoignages avec variantes (carousel, grid).
-// FIX: Full reactivity for colors and nested repeaters.
+// PARTIEL : _featured-product.njk - Crystal Vandal Upgrade
+// Spotlight sur un produit unique sélectionné.
 // ================================================================================================= -->
 
 <section
-  data-zflex-section="testimonials"
+  data-zflex-section="featuredProduct"
   class="py-16 md:py-24"
-  style="background-color: var(--bg-color)"
+  style="background-color: var(--card-bg-color)"
 >
-  <div data-zflex-variant-container="testimonials">
-     
-    
-
-    <div class="container mx-auto px-6">
-      <h2
-        class="text-3xl md:text-5xl font-bold mb-12 text-center"
-        style="color: var(--text-color)"
-        data-zflex-id="testimonials.title"
-        data-zflex-bind="title"
-      >
-        Ce Que Nos Partenaires Disent de Nous
-      </h2>
-
-       
-      <div
-        class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide"
-        data-zflex-repeater="testimonials.items"
-      >
-        
-        <div
-          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
-          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
-          data-zflex-id="testimonials.items.0"
-        >
-          <i
-            class="fas fa-quote-left text-3xl mb-4 opacity-20"
-            style="color: var(--primary-color)"
-          ></i>
-          <p
-            class="text-lg italic mb-6 leading-relaxed text-muted"
-            data-zflex-id="testimonials.items.0.quote"
-            data-zflex-bind="quote"
-          >
-            "Fearlessalan&#39;sBrain a révolutionné notre approche de l&#39;analyse de données. Leurs algorithmes nous ont permis de découvrir des corrélations inattendues, ouvrant la voie à de nouvelles stratégies de marché. Un véritable partenaire d&#39;innovation !"
-          </p>
-          <div class="flex items-center">
-            <div
-              class="h-1 w-8 mr-3"
-              style="background-color: var(--primary-color)"
-            ></div>
-            <p
-              class="font-bold text-lg"
-              style="color: var(--text-color)"
-              data-zflex-id="testimonials.items.0.name"
-              data-zflex-bind="name"
-            >
-              Dr. Élodie Dubois, CEO de TechInnov
-            </p>
-          </div>
-        </div>
-        
-        <div
-          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
-          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
-          data-zflex-id="testimonials.items.1"
-        >
-          <i
-            class="fas fa-quote-left text-3xl mb-4 opacity-20"
-            style="color: var(--primary-color)"
-          ></i>
-          <p
-            class="text-lg italic mb-6 leading-relaxed text-muted"
-            data-zflex-id="testimonials.items.1.quote"
-            data-zflex-bind="quote"
-          >
-            "L&#39;implémentation de leurs solutions logicielles a optimisé nos chaînes d&#39;approvisionnement de manière spectaculaire. Nous avons réduit nos coûts de 15% et amélioré notre réactivité. Leur expertise est inégalée."
-          </p>
-          <div class="flex items-center">
-            <div
-              class="h-1 w-8 mr-3"
-              style="background-color: var(--primary-color)"
-            ></div>
-            <p
-              class="font-bold text-lg"
-              style="color: var(--text-color)"
-              data-zflex-id="testimonials.items.1.name"
-              data-zflex-bind="name"
-            >
-              Marc Lefevre, Directeur Opérationnel chez OptiLogix
-            </p>
-          </div>
-        </div>
-        
-        <div
-          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
-          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
-          data-zflex-id="testimonials.items.2"
-        >
-          <i
-            class="fas fa-quote-left text-3xl mb-4 opacity-20"
-            style="color: var(--primary-color)"
-          ></i>
-          <p
-            class="text-lg italic mb-6 leading-relaxed text-muted"
-            data-zflex-id="testimonials.items.2.quote"
-            data-zflex-bind="quote"
-          >
-            "Leur capacité à &#39;faire penser&#39; nos systèmes est bluffante. Nous avons pu accélérer nos cycles de recherche et développement grâce à des outils prédictifs sur mesure. Une équipe brillante et avant-gardiste."
-          </p>
-          <div class="flex items-center">
-            <div
-              class="h-1 w-8 mr-3"
-              style="background-color: var(--primary-color)"
-            ></div>
-            <p
-              class="font-bold text-lg"
-              style="color: var(--text-color)"
-              data-zflex-id="testimonials.items.2.name"
-              data-zflex-bind="name"
-            >
-              Sophie Chen, Responsable R&amp;D chez BioGenius
-            </p>
-          </div>
-        </div>
-        
-        <div
-          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
-          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
-          data-zflex-id="testimonials.items.3"
-        >
-          <i
-            class="fas fa-quote-left text-3xl mb-4 opacity-20"
-            style="color: var(--primary-color)"
-          ></i>
-          <p
-            class="text-lg italic mb-6 leading-relaxed text-muted"
-            data-zflex-id="testimonials.items.3.quote"
-            data-zflex-bind="quote"
-          >
-            "En tant que startup, nous avions besoin de solutions agiles et puissantes. Fearlessalan&#39;sBrain a su nous fournir des algorithmes qui ont propulsé notre croissance et solidifié notre positionnement sur le marché."
-          </p>
-          <div class="flex items-center">
-            <div
-              class="h-1 w-8 mr-3"
-              style="background-color: var(--primary-color)"
-            ></div>
-            <p
-              class="font-bold text-lg"
-              style="color: var(--text-color)"
-              data-zflex-id="testimonials.items.3.name"
-              data-zflex-bind="name"
-            >
-              Antoine Girard, Fondateur de StartUpX
-            </p>
-          </div>
-        </div>
-        
-      </div>
+  <div class="container mx-auto px-6">
+                
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       
+      <div class="relative group">
+        <div
+          class="absolute -inset-4 bg-primary/10 rounded-full blur-3xl opacity-50 group-hover:opacity-100 transition duration-1000"
+        ></div>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/zflex-wizard.firebasestorage.app/o/stores%2FmUeulkqk6ifOTDauusjn%2Fproducts%2F0baf143e-c252-4ab5-aaf6-485425775659%2Fmain-97eae972-8c86-4045-b087-84a2cd6abb2b.jpg?alt=media"
+          alt="Minions in poolPlouf Minion"
+          class="relative w-full h-auto object-contain max-h-[500px] transform transition duration-500 group-hover:scale-105"
+          data-zflex-id="featuredProduct.image"
+        />
+      </div>
+
+      
+      <div>
+        <h2
+          class="text-4xl md:text-6xl font-bold mb-6 leading-tight"
+          style="color: var(--text-color)"
+          data-zflex-id="featuredProduct.title"
+          data-zflex-bind="title"
+        >
+          Fearlessalan&#39;sBrain est votre partenaire pour &quot;apprendre à penser&quot;. Nous concevons des algorithmes avancés et des stratégies logicielles sur mesure pour résoudre vos problèmes complexes. Optimisez vos processus, améliorez la prise de décision et stimulez une croissance durable. Votre futur intelligent commence ici.
+
+**Titre Alternatif :** L&#39;Intelligence Algorithmique Réinventée : Votre Entreprise Apprend à Penser.
+        </h2>
+
+        <p class="text-xl mb-8 opacity-80" style="color: var(--text-color)" data-zflex-id="featuredProduct.description">
+          Plongez dans l&#39;amusement avec ce papier peint dynamique ! Un Minion détendu profite d&#39;une baignade ensoleillée dans une piscine étincelante, accompagné d&#39;un can
+        </p>
+
+        <div class="flex items-center gap-6">
+          <span class="text-3xl font-bold text-primary" data-zflex-id="featuredProduct.price">
+            3.50 USD
+          </span>
+          <a
+            href="/products/0baf143e-c252-4ab5-aaf6-485425775659/"
+            class="px-8 py-4 bg-primary text-white rounded-full font-bold shadow-xl hover:shadow-2xl transition hover:-translate-y-1"
+          >
+            Découvrir le produit
+          </a>
+        </div>
+      </div>
     </div>
+    
   </div>
-
-  
-  <template data-zflex-variant="testimonials.grid">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-zflex-repeater="testimonials.items"></div>
-    </div>
-  </template>
-
-  <template data-zflex-variant="testimonials.carousel">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2>
-      <div class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide" data-zflex-repeater="testimonials.items"></div>
-    </div>
-  </template>
-
-  <template data-zflex-template="testimonials.items">
-    <div class="p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;">
-      <div class="flex text-yellow-500 mb-4 divider-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-bind="quote">"Une expérience incroyable..."</p>
-      <p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-bind="name">Nom Client</p>
-    </div>
-  </template>
 </section>
   
   
@@ -1108,6 +980,195 @@ bg-transparent text-white"
     </template>
     
   </div>
+</section>
+  
+  
+      <!-- =================================================================================================
+// PARTIEL : _testimonials.njk - Crystal Vandal Upgrade
+// Section témoignages avec variantes (carousel, grid).
+// FIX: Full reactivity for colors and nested repeaters.
+// ================================================================================================= -->
+
+<section
+  data-zflex-section="testimonials"
+  class="py-16 md:py-24"
+  style="background-color: var(--bg-color)"
+>
+  <div data-zflex-variant-container="testimonials">
+     
+    
+
+    <div class="container mx-auto px-6">
+      <h2
+        class="text-3xl md:text-5xl font-bold mb-12 text-center"
+        style="color: var(--text-color)"
+        data-zflex-id="testimonials.title"
+        data-zflex-bind="title"
+      >
+        Ce Que Nos Partenaires Disent de Nous
+      </h2>
+
+       
+      <div
+        class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide"
+        data-zflex-repeater="testimonials.items"
+      >
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.0"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.0.quote"
+            data-zflex-bind="quote"
+          >
+            "Fearlessalan&#39;sBrain a révolutionné notre approche de l&#39;analyse de données. Leurs algorithmes nous ont permis de découvrir des corrélations inattendues, ouvrant la voie à de nouvelles stratégies de marché. Un véritable partenaire d&#39;innovation !"
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.0.name"
+              data-zflex-bind="name"
+            >
+              Dr. Élodie Dubois, CEO de TechInnov
+            </p>
+          </div>
+        </div>
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.1"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.1.quote"
+            data-zflex-bind="quote"
+          >
+            "L&#39;implémentation de leurs solutions logicielles a optimisé nos chaînes d&#39;approvisionnement de manière spectaculaire. Nous avons réduit nos coûts de 15% et amélioré notre réactivité. Leur expertise est inégalée."
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.1.name"
+              data-zflex-bind="name"
+            >
+              Marc Lefevre, Directeur Opérationnel chez OptiLogix
+            </p>
+          </div>
+        </div>
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.2"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.2.quote"
+            data-zflex-bind="quote"
+          >
+            "Leur capacité à &#39;faire penser&#39; nos systèmes est bluffante. Nous avons pu accélérer nos cycles de recherche et développement grâce à des outils prédictifs sur mesure. Une équipe brillante et avant-gardiste."
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.2.name"
+              data-zflex-bind="name"
+            >
+              Sophie Chen, Responsable R&amp;D chez BioGenius
+            </p>
+          </div>
+        </div>
+        
+        <div
+          class="flex-shrink-0 w-[85vw] md:w-auto p-8 rounded-2xl border-muted"
+          style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;"
+          data-zflex-id="testimonials.items.3"
+        >
+          <i
+            class="fas fa-quote-left text-3xl mb-4 opacity-20"
+            style="color: var(--primary-color)"
+          ></i>
+          <p
+            class="text-lg italic mb-6 leading-relaxed text-muted"
+            data-zflex-id="testimonials.items.3.quote"
+            data-zflex-bind="quote"
+          >
+            "En tant que startup, nous avions besoin de solutions agiles et puissantes. Fearlessalan&#39;sBrain a su nous fournir des algorithmes qui ont propulsé notre croissance et solidifié notre positionnement sur le marché."
+          </p>
+          <div class="flex items-center">
+            <div
+              class="h-1 w-8 mr-3"
+              style="background-color: var(--primary-color)"
+            ></div>
+            <p
+              class="font-bold text-lg"
+              style="color: var(--text-color)"
+              data-zflex-id="testimonials.items.3.name"
+              data-zflex-bind="name"
+            >
+              Antoine Girard, Fondateur de StartUpX
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  
+  <template data-zflex-variant="testimonials.grid">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-zflex-repeater="testimonials.items"></div>
+    </div>
+  </template>
+
+  <template data-zflex-variant="testimonials.carousel">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12 text-center" style="color: var(--text-color)" data-zflex-bind="title">Titre Témoignages</h2>
+      <div class="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible gap-8 pb-4 scrollbar-hide" data-zflex-repeater="testimonials.items"></div>
+    </div>
+  </template>
+
+  <template data-zflex-template="testimonials.items">
+    <div class="p-8 rounded-2xl border-muted" style="background-color: var(--card-bg-color); border-width: 1px; border-style: solid;">
+      <div class="flex text-yellow-500 mb-4 divider-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      <p class="text-lg italic mb-6 leading-relaxed text-muted" data-zflex-bind="quote">"Une expérience incroyable..."</p>
+      <p class="font-bold text-lg" style="color: var(--text-color)" data-zflex-bind="name">Nom Client</p>
+    </div>
+  </template>
 </section>
   
   
