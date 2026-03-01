@@ -59,14 +59,15 @@
 
       /* derived / advanced (fall back to computedPalette if available, else sensible default) */
       --text-muted-color: #9CA3AF;
+      --muted-text-color: var(--text-muted-color);
       --card-border-color: #2A3D4F;
-      --input-bg-color: #F3F4F6;
-      --chat-response-bg-color: #F9FAFB;
+      --input-bg-color: color-mix(in srgb, var(--bg-color), var(--text-color) 4%);
+      --chat-response-bg-color: color-mix(in srgb, var(--bg-color), var(--text-color) 2%);
 
       /* utility / tonal */
-      --primary-600: #000000;
-      --primary-700: #000000;
-      --secondary-600: #6B7280;
+      --primary-600: color-mix(in srgb, var(--primary-color), black 10%);
+      --primary-700: color-mix(in srgb, var(--primary-color), black 20%);
+      --secondary-600: color-mix(in srgb, var(--secondary-color), black 10%);
 
     
 
